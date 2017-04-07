@@ -14,7 +14,12 @@ layout: default
     <li>
       <time class="post-meta" datetime="{{ post.date | date_to_xmlschema }}">{% include date.html %}</time>
       <h2>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+          {% if post.subtitle %}
+            <small class="post-subtitle">{{ post.subtitle }}</small>
+          {% endif %}
+        </a>
       </h2>
     </li>
     {% endfor %}
