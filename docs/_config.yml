@@ -49,8 +49,4 @@ exclude:
   - README.md
   - node_modules
   - vendor
-#keep_files:
-#  - google2bfa19f4f3a8a8ee.html
 #gems:
-sass:
-  sass_dir: assets/sass

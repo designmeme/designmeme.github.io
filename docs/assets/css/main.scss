@@ -41,10 +41,9 @@ $on-laptop:        800px !default;
 }
 
 // Import partials.
-@import "base",
-"layout",
-"syntax-highlighting"
-;
+@import "base";
+@import "layout";
+@import "syntax-highlighting";
 
 .en:lang(en), .ko:lang(ko) {
   font-weight: bold;
