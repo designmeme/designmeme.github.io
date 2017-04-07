@@ -1,0 +1,56 @@
+# Site settings
+title:        designmeme
+description:  >
+  description
+baseurl:      ""
+url:          https://designmeme.github.io
+author:       Jihye Lee
+email:        ghe.lee19@gmail.com
+#logo:         "" # og_image
+facebook:
+  app_id:     230206910787694
+index:
+  en: /
+  ko: /ko/
+feed:
+  en: /feed.xml
+  ko: /feed-ko.xml
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      author: Jihye Lee
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /blog/:categories/:title/
+
+# Custom vars
+google_analytics: UA-93339811-1
+github_username:  designmeme
+favicon_version: 0.1.0
+paypal: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=AKTGBZD4YZWGG&lc=GA&item_name=designmeme&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
+
+# Build settings
+source:           ""
+destination:      _gh_pages
+permalink:        pretty
+timezone:         GMT
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - LICENSE
+  - package.json
+  - README.md
+  - node_modules
+  - vendor
+#keep_files:
+#  - google2bfa19f4f3a8a8ee.html
+#gems:
+sass:
+  sass_dir: assets/sass

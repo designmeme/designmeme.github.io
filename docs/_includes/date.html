@@ -1,0 +1,6 @@
+{% assign date = post.date | default: page.date %}
+{% if page.lang == 'ko' %}
+  {{ date | date: "%Y년 %-m월 %-d일" }}
+{% else %}
+  {{ date | date: "%b %-d, %Y" }}
+{% endif %}
