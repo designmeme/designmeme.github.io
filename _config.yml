@@ -1,14 +1,12 @@
 # Site settings
 title:        designmeme
 description:  >
-  description
+  Posts, ideas, thoughts, projects about front-end web development and web design
 baseurl:      ""
 url:          https://designmeme.github.io
 author:       Jihye Lee
 email:        ghe.lee19@gmail.com
 #logo:         "" # og_image
-facebook:
-  app_id:     230206910787694
 index:
   en: /
   ko: /ko/
@@ -23,6 +21,7 @@ defaults:
     values:
       layout: default
       author: Jihye Lee
+      image: "" # og_image
   - scope:
       path: ""
       type: "posts"
