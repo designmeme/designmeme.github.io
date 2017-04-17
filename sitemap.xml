@@ -58,6 +58,10 @@ sitemap:
         <priority>0.4</priority>
     </url>
     <url>
+        <loc>{{ "finding-baseline/baseline-calculator/ " | absolute_url }}</loc>
+        <priority>0.4</priority>
+    </url>
+    <url>
         <loc>{{ "finding-baseline/lab/ " | absolute_url }}</loc>
         <priority>0.4</priority>
     </url>
