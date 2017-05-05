@@ -1,68 +1,15 @@
 ---
 layout: null
-sitemap:
-  exclude: 'yes'
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    {% unless post.published == false %}
-    <url>
-        <loc>{{ post.url | absolute_url }}</loc>
-        {% if post.lastmod %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-        {% elsif post.date %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        {% endif %}
-        {% if post.sitemap.changefreq %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-        {% else %}
-        <changefreq>monthly</changefreq>
-        {% endif %}
-        {% if post.sitemap.priority %}
-        <priority>{{ post.sitemap.priority }}</priority>
-        {% else %}
-        <priority>0.5</priority>
-        {% endif %}
-    </url>
-    {% endunless %}
-    {% endfor %}
-    {% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" or page.name contains 'scss' %}
-    <url>
-        <loc>{{ page.url | remove: "index.html" | absolute_url }}</loc>
-        {% if page.sitemap.lastmod %}
-        <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
-        {% elsif page.date %}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        {% endif %}
-        {% if page.sitemap.changefreq %}
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-        {% else %}
-        <changefreq>monthly</changefreq>
-        {% endif %}
-        {% if page.sitemap.priority %}
-        <priority>{{ page.sitemap.priority }}</priority>
-        {% else %}
-        <priority>0.3</priority>
-        {% endif %}
-    </url>
-    {% endunless %}
-    {% endfor %}
-    <url>
-        <loc>{{ "finding-baseline/ " | absolute_url }}</loc>
-        <priority>0.4</priority>
-    </url>
-    <url>
-        <loc>{{ "finding-baseline/baseline-calculator/ " | absolute_url }}</loc>
-        <priority>0.4</priority>
-    </url>
-    <url>
-        <loc>{{ "finding-baseline/lab/ " | absolute_url }}</loc>
-        <priority>0.4</priority>
-    </url>
-</urlset>
+<sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>{{ site.url}}/sitemap_index.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>{{ site.url}}/finding-baseline/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>{{ site.url}}/bitcoin-news/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>
