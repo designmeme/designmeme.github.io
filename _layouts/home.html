@@ -25,6 +25,23 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe"><a href="{{ site.feed[page.lang] | relative_url }}">RSS feed</a></p>
+  <!--<p class="rss-subscribe"><a href="{{ site.feed[page.lang] | relative_url }}">RSS feed</a></p>-->
+
+  <h1 class="page-heading">Pages</h1>
+
+  <ul class="post-list">
+    <li>
+      <div class="post-meta">비트코인 영문 뉴스 번역 블로그</div>
+      <a class="post-link" href="{{ 'bitcoin-news/' | relative_url }}">Bitcoin News | 비트코인 취미로 뉴스</a>
+    </li>
+    <li>
+      <div class="post-meta">Baseline Ratio Database of Google Fonts</div>
+      <a class="post-link" href="{{ 'finding-baseline/' | relative_url }}">Finding Baseline</a>
+    </li>
+    <li>
+      <div class="post-meta">Baseline Ratio Calculator of Google Fonts</div>
+      <a class="post-link" href="{{ 'finding-baseline/baseline-calculator/' | relative_url }}">Baseline Calculator</a>
+    </li>
+  </ul>
 
 </div>
