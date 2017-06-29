@@ -1,7 +1,6 @@
 # Site settings
-title:        designmeme
-description:  >
-  Posts, ideas, thoughts, projects about front-end web development and web design
+title:        Jihye Lee 이지혜
+description:  Freelance Font-end Web Developer
 baseurl:      ""
 url:          https://designmeme.github.io
 author:       Jihye Lee
@@ -29,10 +28,11 @@ defaults:
       permalink: /blog/:categories/:title/
 
 # Custom vars
+google_adsense: ca-pub-5213448719952520
 google_analytics: UA-93339811-1
 github_username:  designmeme
+copyright: © Jihye Lee
 favicon_version: 0.1.0
-paypal: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=AKTGBZD4YZWGG&lc=GA&item_name=designmeme&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 
 # Build settings
 permalink:        pretty

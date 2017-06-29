@@ -1,0 +1,83 @@
+// Header
+//
+//
+
+
+.site-header {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .wrapper {
+    display: flex;
+  }
+  .site-title {
+    width: 300px;
+    .logo {
+      display: block;
+    }
+  }
+  .site-nav {
+    flex: 1 1 auto;
+    .menu-icon {
+      display: none;
+    }
+    .trigger {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .page-link {
+        min-width: 10em;
+        margin-bottom: .5em;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 300;
+        line-height: 1.111; // 20px
+        transition: color 400ms;
+        &:before {
+          content: '';
+          box-sizing: border-box;
+          position: relative;
+          //top: .17em;
+          display: inline-block;
+          width: 1.111em; // 20px
+          height: 1.111em;
+          border-radius: 50%;
+          border: 1px solid $text-color-gray;
+          margin-right: .75em;
+          vertical-align: top;
+          transition: all 400ms;
+        }
+        &.active {
+          font-weight: 700;
+        }
+        &:hover,
+        &.active {
+          color: $brand-primary;
+          &:before {
+            border-color: $brand-primary;
+            background-color: $brand-primary;
+          }
+        }
+      }
+    }
+  }
+  .site-lang-nav {
+    .lang-link {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-bottom: .5em;
+      background-repeat: no-repeat;
+      @each $lang in (en, ko) {
+        &.#{$lang} {
+          background-image: url('../image/common/icon-#{$lang}.svg');
+          &:lang(#{$lang}) {
+            background-image: url('../image/common/icon-#{$lang}-active.svg');
+          }
+          &:hover {
+            background-image: url('../image/common/icon-#{$lang}-hover.svg');
+          }
+        }
+      }
+    }
+  }
+}

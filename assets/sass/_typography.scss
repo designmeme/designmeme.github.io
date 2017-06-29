@@ -1,0 +1,52 @@
+// Typography
+//
+//
+
+
+//
+// Base text hierarchy
+//
+html {
+  font-size: $font-size; // enable for rem
+}
+
+@each $map in $text-hierarchy {
+  #{map-get($map, selectors)} {
+    font-size: map-get($map, font-size);
+    line-height: map-get($map, line-height);
+  }
+}
+
+//
+// Body Text
+//
+body {
+  background: $body-color;
+  color: $text-color;
+  font-family: $font-family;
+  font-weight: $font-weight;
+}
+
+p.smaller {
+  color: $text-color-gray;
+}
+
+//
+// Headings
+//
+h1, .h1,
+h2, .h2 {
+  font-weight: 400;
+}
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-weight: 700;
+}
+h5, .h5 {
+  color: $brand-primary;
+}
+
+
+

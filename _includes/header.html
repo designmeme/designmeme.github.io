@@ -2,7 +2,9 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.index[page.lang] | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" href="{{ site.index[page.lang] | default: '/' | relative_url }}" title="{{ site.title | escape }}">
+      <img src="{{ 'assets/image/common/logo.svg' | relative_url }}" alt="{{ site.title | escape }}" class="logo">
+    </a>
 
     <nav class="site-nav">
       <span class="menu-icon">
@@ -14,24 +16,26 @@
       </span>
 
       <div class="trigger">
-        {% assign pages=site.pages | where:"lang", page.lang %}
+        {% assign pages = site.pages | where:"lang", page.lang %}
         {% for my_page in pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {% if my_page.title or my_page.link_title %}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.link_title | default: my_page.title | escape }}</a>
           {% endif %}
-        {% endfor %}
-
-        {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-        {% for post in posts %}
-          <a class="page-link" href="{{ post.url | relative_url }}" class="{{ post.lang }}">{{ post.lang }}</a>
-        {% endfor %}
-
-        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-        {% for page in pages %}
-          <a class="page-link" href="{{ page.url | relative_url }}" class="{{ page.lang }}">{{ page.lang }}</a>
         {% endfor %}
       </div>
     </nav>
+
+    <div class="site-lang-nav">
+      {% assign posts = site.posts | where:"ref", page.ref | sort: 'lang' %}
+      {% for post in posts %}
+        <a class="lang-link {{ post.lang }}" href="{{ post.url | relative_url }}" aria-label="{{ post.lang }}"></a>
+      {% endfor %}
+
+      {% assign pages = site.pages | where:"ref", page.ref | sort: 'lang' %}
+      {% for page in pages %}
+        <a class="lang-link {{ page.lang }}" href="{{ page.url | relative_url }}" aria-label="{{ page.lang }}"></a>
+      {% endfor %}
+    </div>
 
   </div>
 

@@ -2,38 +2,20 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
+    <div class="footer-title">
+      <img src="{{ 'assets/image/common/logo-footer.svg' | relative_url }}" alt="{{ site.title | escape }}" class="logo">
     </div>
+
+    <div class="site-contact">
+      {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}" class="contact-link" aria-label="Visit github"><i class="fa fa-github" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if site.email %}
+        <a href="mailto:{{ site.email }}" class="contact-link circle" aria-label="Send email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      {% endif %}
+    </div>
+
+    <div class="site-copyright">{{ site.copyright | escape }}</div>
 
   </div>
 

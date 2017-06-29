@@ -1,0 +1,44 @@
+// Footer
+//
+//
+
+
+.site-footer {
+  padding: 100px 0;
+  background: $brand-primary;
+  color: #fff;
+  font-weight: 200;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-title {
+    order: 1;
+    .logo {
+      display: block;
+    }
+  }
+  .site-contact {
+    order: 2;
+    .contact-link {
+      display: inline-block;
+      margin-left: 2rem;
+      font-size: 2rem;
+      color: #fff;
+      vertical-align: middle;
+      &.circle {
+        width: 1.72rem;
+        height: 1.72rem;
+        border-radius: 50%;
+        background-color: #fff;
+        color: $brand-primary;
+        font-size: 1.111rem;
+        text-align: center;
+      }
+    }
+  }
+  .site-copyright {
+
+  }
+}
