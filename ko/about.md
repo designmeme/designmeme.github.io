@@ -1,10 +1,7 @@
 ---
-layout: page
-link_title: About
 title: 안녕하세요, 이지혜입니다
-lang: ko
-ref: about
-permalink: /ko/about/
+subtitle: 아룡!
+name: about
 ---
 
 # 2011년, 직군이 생소하던 그 때부터 프리랜서로서 프론트엔드 웹 개발

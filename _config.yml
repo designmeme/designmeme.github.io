@@ -17,15 +17,34 @@ feed:
 defaults:
   - scope:
       path: ""
+      type: pages
     values:
-      layout: default
-      author: Jihye Lee
-      image: "" # og_image
+      layout: page
+      type: pages
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      permalink: /blog/:categories/:title/
+      layout: post
+      type: posts
+  - scope:
+      path: en
+    values:
+      lang: en
+  - scope:
+      path: ko
+    values:
+      lang: ko
+  - scope:
+      path: _posts/en
+    values:
+      lang: en
+      categories: en blog
+  - scope:
+      path: _posts/ko
+    values:
+      lang: ko
+      categories: ko blog
 
 # Custom vars
 google_adsense: ca-pub-5213448719952520
@@ -35,7 +54,7 @@ copyright: © Jihye Lee
 favicon_version: 0.1.0
 
 # Build settings
-permalink:        pretty
+permalink:        /:categories/:title/
 timezone:         GMT
 exclude:
   - Gemfile
@@ -49,3 +68,4 @@ exclude:
 #gems:
 sass:
   sass_dir: assets/sass
+#  style: compressed

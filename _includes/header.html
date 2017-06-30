@@ -1,9 +1,9 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-
-    <a class="site-title" href="{{ site.index[page.lang] | default: '/' | relative_url }}" title="{{ site.title | escape }}">
-      <img src="{{ 'assets/image/common/logo.svg' | relative_url }}" alt="{{ site.title | escape }}" class="logo">
+    {% assign homelink = site.data.navigation[page.lang]['home'] %}
+    <a class="site-title" href="{{ homelink.url | relative_url }}">
+      <img src="{{ 'assets/image/common/logo.svg' | relative_url }}" alt="{{ homelink.title }}" class="logo">
     </a>
 
     <nav class="site-nav">
@@ -16,24 +16,26 @@
       </span>
 
       <div class="trigger">
-        {% assign pages = site.pages | where:"lang", page.lang %}
-        {% for my_page in pages %}
-          {% if my_page.title or my_page.link_title %}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.link_title | default: my_page.title | escape }}</a>
-          {% endif %}
+        {% assign links = site.data.navigation[page.lang] %}
+        {% for link in links %}
+          {% unless link[0] == 'home' %}
+          {% assign current = link[0] | prepend: '/' | append: '/' %}
+            <a class="page-link {% if page.url contains current %}active{% endif %}" href="{{ link[1].url | relative_url }}">{{ link[1].title }}</a>
+          {% endunless %}
         {% endfor %}
       </div>
     </nav>
 
     <div class="site-lang-nav">
-      {% assign posts = site.posts | where:"ref", page.ref | sort: 'lang' %}
-      {% for post in posts %}
-        <a class="lang-link {{ post.lang }}" href="{{ post.url | relative_url }}" aria-label="{{ post.lang }}"></a>
-      {% endfor %}
+      {% if page.type == "pages" %}
+        {% assign type = "pages" %}
+      {% else %}
+        {% assign type = "posts" %}
+      {% endif %}
 
-      {% assign pages = site.pages | where:"ref", page.ref | sort: 'lang' %}
-      {% for page in pages %}
-        <a class="lang-link {{ page.lang }}" href="{{ page.url | relative_url }}" aria-label="{{ page.lang }}"></a>
+      {% assign group = site[type] | where:"name", page.name | sort: 'lang' %}
+      {% for item in group %}
+        <a class="lang-link {{ item.lang }}" href="{{ item.url | relative_url }}" aria-label="{{ site.data.languages[item.lang] }}"></a>
       {% endfor %}
     </div>
 
