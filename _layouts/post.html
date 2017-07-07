@@ -49,8 +49,8 @@ layout: default
   <footer class="page-footer">
     <div class="sns-links">
       {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
-      <a href="https://www.facebook.com/sharer/sharer.php?u={{ canonical }}" class="sns-link facebook" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="https://twitter.com/home?status={{ canonical }}" class="sns-link twitter" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ canonical }}" class="sns-link facebook" target="_blank" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/home?status={{ canonical }}" class="sns-link twitter" target="_blank" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
     </div>
 
     <div class="post-nav">
@@ -98,7 +98,7 @@ layout: default
         {% assign post = post[0] %}
         {% if post.title %}
         <li {% if post.title == page.title %}class="active"{% endif %}>
-          <a class="sub-link" href="{{ post.url | relative_url }}" target="_blank">
+          <a class="sub-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </li>
