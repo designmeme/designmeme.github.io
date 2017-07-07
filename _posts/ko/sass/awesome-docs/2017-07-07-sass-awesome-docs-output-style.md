@@ -4,7 +4,7 @@ name:     sass-awesome-docs-output-style
 title:    Sass 출력 스타일
 subtitle: 4가지 CSS 양식 중 마음에 드는 것을 선택하세요
 tags:     sass, scss, css
-image:    https://unsplash.it/1200/630
+image:    
 date:             2017-07-07 10:23:00 +0900
 last_modified_at: 
 ---
