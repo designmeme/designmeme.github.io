@@ -47,6 +47,15 @@
       right: 25%;
       border-top: 1px solid $gray-n3;
     }
+    .reversefootnote {
+      font-size: 0;
+      &:after {
+        content: '\f112';
+        font-family: FontAwesome;
+        font-size: .84rem;
+        padding: 0 .5em;
+      }
+    }
   }
   @at-root html.footnotes-lifted & {
     margin-top: 0;
