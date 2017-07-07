@@ -4,6 +4,7 @@ subtitle: 공부노트이자 성장노트
 name:     blog
 layout:   blog
 permalink: /
+excerpt:  말그대로 기술이 범람하고 있는 것 같습니다. 좀 늦은 감이 있지만 요즘엔 ES6, webpack, angular.js 에 관심이 있어 공부 중입니다.
 ---
 
 말그대로 기술이 범람하고 있는 것 같습니다. 좀 늦은 감이 있지만 요즘엔 ES6, webpack, angular.js 에 관심이 있어 공부 중입니다.
