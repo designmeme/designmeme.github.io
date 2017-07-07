@@ -27,9 +27,6 @@ layout: default
         <li>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
-            {% if post.subtitle %}
-            <small class="post-subtitle">{{ post.subtitle }}</small>
-            {% endif %}
           </a>
         </li>
         {% endif %}
