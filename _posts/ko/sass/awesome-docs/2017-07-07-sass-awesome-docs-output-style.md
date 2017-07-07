@@ -6,7 +6,7 @@ subtitle: 4가지 CSS 양식 중 마음에 드는 것을 선택하세요
 tags:     sass, scss, css
 image:    
 date:             2017-07-07 10:23:00 +0900
-last_modified_at: 
+last_modified_at: 2017-07-07 13:34:00 +0900
 ---
 
 * Will be replaced with the ToC
@@ -39,7 +39,6 @@ Sass의 기본 CSS 출력 스타일인 중첩 스타일은 문서의 구조를 �
 ~~~
 
 들여쓰기 덕분에 훑어만 봐도 스타일 구조를 쉽게 알 수 있으므로 큰 CSS 파일을 살펴볼 때 더욱 유용합니다.
-[원문](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_13){:.original-link target="_blank"}
 
 ***
 
