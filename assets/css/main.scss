@@ -2,15 +2,24 @@
 ---
 
 @import "variables";
-//@import "mixins";
+@import "mixins";
 
 @import "reset";
 
 @import "typography";
-//@import "syntax-highlighting";
+@import "image";
+@import "syntax-highlighting";
+@import "code";
 @import "utilities";
 
 @import "layout";
 @import "header";
 @import "footer";
+
+@import "page";
+@import "blog";
+@import "post";
+@import "subnav";
+@import "footnotes";
+
 

@@ -1,7 +1,6 @@
 ---
-title: Home
-subtitle: Hello!
-name: home
+title:      Home
+subtitle:   Hello!
+name:       home
+#permalink:  /
 ---
-
-en 홈

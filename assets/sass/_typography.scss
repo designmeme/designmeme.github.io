@@ -4,18 +4,59 @@
 
 
 //
-// Base text hierarchy
+// Text hierarchy
 //
 html {
-  font-size: $font-size; // enable for rem
+  @include responsive-font-size(); // enable for rem
 }
 
-@each $map in $text-hierarchy {
-  #{map-get($map, selectors)} {
-    font-size: map-get($map, font-size);
-    line-height: map-get($map, line-height);
+@include text-hierarchy();
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin: 0 0 2rem;
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6,
+p,
+ul, ol, dl,
+blockquote,
+figure {
+  margin: 0 0 1.5rem;
+}
+
+li, dd {
+  p, ol, ul, dl {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
+
+
+//
+// Headings
+//
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-weight: 400;
+}
+
+h5, .h5,
+h6, .h6 {
+  font-weight: 700;
+}
+
+h3, .h3,
+h5, .h5 {
+  color: $brand-primary;
+}
+
 
 //
 // Body Text
@@ -27,26 +68,63 @@ body {
   font-weight: $font-weight;
 }
 
-p.smaller {
+p.small {
   color: $text-color-gray;
 }
+p.smaller {
+  color: $text-color-muted;
+}
+
 
 //
-// Headings
+// Lists
 //
-h1, .h1,
-h2, .h2 {
-  font-weight: 400;
+ol, ul {
+  padding-left: 2em;
 }
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+dt {
   font-weight: 700;
 }
-h5, .h5 {
-  color: $brand-primary;
+dd {
+  margin-left: 2em;
 }
 
 
+//
+// Quotes
+//
+blockquote {
+  padding: 0 2em;
+}
 
+//
+// Inline elements
+//
+a {
+  color: $link-color;
+  transition: all 400ms;
+  &:visited,
+  &.visited {
+    color: $link-color-visited;
+  }
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: none;
+  }
+}
+
+.side-by-side { // for english written side by side
+  @extend sup;
+  font-style: normal;
+  color: $text-color-muted;
+  font-weight: 300;
+}
+
+//
+// Etc
+//
+hr { // simply used to separate section
+  margin-top: 0;
+  margin-bottom: $section-margin;
+  border: 0;
+}

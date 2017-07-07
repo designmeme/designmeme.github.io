@@ -1,0 +1,45 @@
+// Code
+//
+//
+
+.code-label {
+  margin: 0;
+  padding: 0 .5em;
+  border-radius: 3px 3px 0 0;
+  border: 1px solid $brand-primary-light;
+  border-bottom: 0;
+  background-color: $brand-primary-lighter;
+  color: $brand-primary-dark;
+  font-size: .72em;
+  &:before {
+    display: inline;
+    margin-right: 1em;
+    color: $brand-primary;
+    font-weight: 700;
+  }
+  @each $code in (HTML, CSS, SCSS, Sass, Javascript, jQuery, Ruby) {
+    &.code-label-#{to-lower-case($code)}:before {
+      content: "#{$code}";
+    }
+  }
+}
+div.highlighter-rouge {
+  border-radius: 3px;
+  font-size: .84em;
+  @at-root .code-label + & {
+    border-radius: 0 0 3px 3px;
+  }
+}
+code.highlighter-rouge {
+  position: relative;
+  top: -.1em;
+  border-radius: 2px;
+  background-color: $brand-primary-lighter;
+  font-size: .95em;
+  line-height: 1;
+  text-decoration: none;
+  color: $brand-primary;
+  @at-root a & {
+    position: static;
+  }
+}

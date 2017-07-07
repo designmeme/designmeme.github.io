@@ -1,17 +1,19 @@
 # Site settings
-title:        Jihye Lee 이지혜
-description:  Freelance Font-end Web Developer
-baseurl:      ""
-url:          https://designmeme.github.io
-author:       Jihye Lee
-email:        ghe.lee19@gmail.com
-#logo:         "" # og_image
-index:
-  en: /
-  ko: /ko/
-feed:
-  en: /feed.xml
-  ko: /feed-ko.xml
+baseurl:          ""
+url:              https://designmeme.github.io
+
+title:            이지혜 Jihye Lee
+description:      Freelance Font-end Web Developer
+author:           이지혜 Jihye Lee
+email:            ghe.lee19@gmail.com
+
+image:            "" # og_image, fb 고해상도 1200x630px, 8MB 이하
+google_adsense:   ca-pub-5213448719952520
+google_analytics: UA-93339811-1
+facebook_app_id:  127116027879734
+github_username:  designmeme
+copyright:        © Jihye Lee
+favicon_version:  0.1.0
 
 # Front matter defaults
 defaults:
@@ -46,13 +48,6 @@ defaults:
       lang: ko
       categories: ko blog
 
-# Custom vars
-google_adsense: ca-pub-5213448719952520
-google_analytics: UA-93339811-1
-github_username:  designmeme
-copyright: © Jihye Lee
-favicon_version: 0.1.0
-
 # Build settings
 permalink:        /:categories/:title/
 timezone:         GMT
@@ -65,7 +60,17 @@ exclude:
   - README.md
   - node_modules
   - vendor
-#gems:
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
 sass:
   sass_dir: assets/sass
-#  style: compressed
+  style: compressed
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1

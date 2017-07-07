@@ -1,0 +1,107 @@
+// Post
+//
+//
+
+
+// post meta data
+//
+.post-meta {
+  @extend p.smaller;
+  span {
+    display: block;
+    .fa {
+      margin-right: .25em;
+    }
+  }
+  .date {
+    color: $text-color-silver;
+  }
+  @include media-breakpoint-down(md) {
+    margin-top: 1em;
+  }
+  @include aside;
+}
+
+// post sns links
+//
+$sns-link-width: 3.3rem;
+.sns-links {
+  display: flex;
+  justify-content: center;
+  margin: $section-margin 0;
+  text-align: center;
+  .sns-link {
+    width: $sns-link-width;
+    height: $sns-link-width;
+    line-height: $sns-link-width;
+    border-radius: 50%;
+    background-color: $brand-primary;
+    font-size: 2rem;
+    color: #fff;
+    transition: all 400ms;
+    &:not(:first-child) {
+      margin-left: 1em;
+    }
+    &.facebook:hover {
+      background-color: $facebook-color;
+    }
+    &.twitter:hover {
+      background-color: $twitter-color;
+    }
+  }
+}
+
+// post next, prev links
+//
+.post-nav {
+  font-size: 1.11rem;
+  a {
+    display: block;
+  }
+  .icon {
+    white-space: nowrap;
+  }
+  .fa {
+    font-size: 1.33rem;
+  }
+  .post-next-link {
+    margin-left: 1em;
+    margin-bottom: 2rem;
+    text-align: right;
+    .fa {
+      margin-left: .5em;
+    }
+  }
+  .post-prev-link {
+    margin-right: 1em;
+    .fa {
+      margin-right: .5em;
+    }
+  }
+}
+
+// markdown-toc
+//
+#markdown-toc {
+  margin-top: -($section-margin / 2);
+  margin-bottom: $section-margin / 2;
+  @extend p.small;
+  &:before {
+    content: 'Index';
+    display: block;
+    margin-left: -2em;
+    @extend p.smaller;
+  }
+}
+
+// header original link
+//
+.original-link {
+  @extend p.smaller;
+  font-weight: 400;
+  &:after {
+    content: ' \f08e';
+    font-family: FontAwesome;
+  }
+}
+

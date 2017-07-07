@@ -3,7 +3,7 @@
 ko:
   home:
     title: 이지혜 Jihye Lee
-    url: /ko/
+    url: /
   about:
     title: About
     url: /ko/about/
@@ -14,30 +14,30 @@ ko:
       resume:
         title: 이력서 및 경력기술서
         url: /ko/about/resume/
-  projects:
-    title: Projects
-    url: /ko/projects/
+#  projects:
+#    title: Projects
+#    url: /ko/projects/
   blog:
     title: Blog
-    url: /ko/blog/
+    url: /
 
-en:
-  home:
-    title: Jihye Lee 이지혜
-    url: /en/
-  about:
-    title: About
-    url: /en/about/
-    submenu:
-      about:
-        title: About
-        url: /en/about/
-      resume:
-        title: Resume
-        url: /en/about/resume/
-  projects:
-    title: Projects
-    url: /en/projects/
-  blog:
-    title: Blog
-    url: /en/blog/
+#en:
+#  home:
+#    title: Jihye Lee 이지혜
+#    url: /en/
+#  about:
+#    title: About
+#    url: /en/about/
+#    submenu:
+#      about:
+#        title: About
+#        url: /en/about/
+#      resume:
+#        title: Resume
+#        url: /en/about/resume/
+##  projects:
+##    title: Projects
+##    url: /en/projects/
+#  blog:
+#    title: Blog
+#    url: /en/blog/

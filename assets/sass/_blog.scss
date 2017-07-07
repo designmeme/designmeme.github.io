@@ -1,0 +1,22 @@
+// Blog
+//
+//
+
+
+.blog {
+  margin-top: $section-margin;
+}
+
+.post-subject-title {
+  @extend h4;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: $section-margin / 2;
+  @extend p.small;
+  li {
+    margin-bottom: 1em;
+  }
+}

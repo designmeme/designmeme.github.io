@@ -1,22 +1,40 @@
 ---
 layout: default
 ---
-post layout
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  {% if page.image %}
+  <div class="page-image" style="background-image: url({{ page.image }})">
+    <div class="inner"><img src="{{ page.image }}" alt=""></div>
+  </div>
+  {% endif %}
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">
-      {{ page.title | escape }}
-      {% if page.subtitle %}
-        <small class="post-subtitle"> {{ page.subtitle }}</small>
-      {% endif %}
-    </h1>
+  <header class="page-header">
+    <h1 class="page-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    {% if page.subtitle %}
+      <p class="page-subtitle"> {{ page.subtitle }}</p>
+    {% endif %}
+
     <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{% include date.html %}</time>
-      {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+      <span class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>
+        {% if page.lang == "ko" %}최초 작성일{% else %}Created{% endif %}: {% include date.html date=page.date %}
+      </span>
+      {% if page.last_modified_at %}
+      <span class="modified"><i class="fa fa-pencil" aria-hidden="true"></i>
+        {% if page.lang == "ko" %}최종 수정일{% else %}Modified{% endif %}: {% include date.html date=page.last_modified_at %}
+      </span>
+      {% endif %}
+      <span class="reading-time" title="{{ page.content | number_of_words }} words">
+        <i class="fa fa-book" aria-hidden="true"></i>
+        {% assign reading_time = page.content | number_of_words | divided_by: 160 %}
+        {% if reading_time > 0 %}
+          {{ reading_time }}{% if page.lang == "ko" %}분{% else %}mins{% endif %}
+        {% else %}
+          1{% if page.lang == "ko" %}분{% else %}min{% endif %}
+        {% endif %}
+      </span>
     </p>
     {% unless page.tags == empty %}
-    <p class="tags">
+    <p class="tags" hidden>
       {% for tag in page.tags %}
       <a>{{ tag | downcase }}</a>
       {% endfor %}
@@ -24,33 +42,73 @@ post layout
     {% endunless %}
   </header>
 
-  <div class="post-content" itemprop="articleBody">
+  <div class="page-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-  <div>
-    {% assign posts = site.posts | where: "lang", page.lang %}
-    {% for post in posts %}
-      {% if prev %}
-        <a href="{{ post.url | relative_url }}">Previous</a>
+  <footer class="page-footer">
+    <div class="sns-links">
+      {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ canonical }}" class="sns-link facebook" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/home?status={{ canonical }}" class="sns-link twitter" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="post-nav">
+    {% assign names = site.data.posts.subjects[page.subject].names %}
+    {% assign posts = site.posts | where: "lang", page.lang | where: "subject", page.subject %}
+    {% for name in names %}
+      {% if name == page.name %}
+        {% assign index = forloop.index | minus: 1 %}
         {% break %}
-      {% endif %}
-      {% if post.id == page.id %}
-        {% assign prev = true %}
       {% endif %}
     {% endfor %}
 
-    {% assign posts2 = site.posts | reverse | where: "lang", page.lang %}
-    {% for post in posts2 %}
-      {% if next %}
-        <a href="{{ post.url | relative_url }}">Next</a>
+    {% for i in (1..posts.size) %}
+      {% assign rel_index = index | plus: i %}
+      {% assign rel_post = posts | where: "name", names[rel_index] %}
+      {% assign rel_post = rel_post[0] %}
+      {% if rel_post and rel_index < names.size %}
+        <a href="{{ rel_post.url | reletive_url }}" class="post-next-link">{{ rel_post.title }}<span class="icon"><i class="fa fa-eye" aria-hidden="true"></i><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
         {% break %}
       {% endif %}
-      {% if post.id == page.id %}
-        {% assign next = true %}
+    {% endfor %}
+
+    {% for i in (1..posts.size) %}
+      {% assign rel_index = index | minus: i %}
+      {% assign rel_post = posts | where: "name", names[rel_index] %}
+      {% assign rel_post = rel_post[0] %}
+      {% if rel_post and rel_index >= 0 %}
+        <a href="{{ rel_post.url | reletive_url }}" class="post-prev-link"><span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i><i class="fa fa-eye" aria-hidden="true"></i></span>{{ rel_post.title }}</a>
+        {% break %}
       {% endif %}
     {% endfor %}
-  </div>
+    </div>
+
+    <nav class="sub-nav">
+      {% assign subjects = site.data.posts.subjects %}
+      {% for subject in subjects %}
+      {% if subject[1].title[page.lang] %}
+         <h6 class="sub-nav-title {% if subject[0] == page.subject %}active{% endif %}">
+           <a href="#">{{ subject[1].title[page.lang] }} ({{subject[1].names.size}})</a>
+         </h6>
+      {% assign names = subject[1].names %}
+      <ul class="sub-link-list">
+        {% for name in names %}
+        {% assign post = site.posts | where:"name", name | where:"lang", page.lang %}
+        {% assign post = post[0] %}
+        {% if post.title %}
+        <li {% if post.title == page.title %}class="active"{% endif %}>
+          <a class="sub-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% endfor %}
+    </nav>
+  </footer>
 
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}

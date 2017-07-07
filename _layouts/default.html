@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" {% if page.image %}class="has-image"{% endif %}>
 
   {% include head.html %}
 
@@ -7,9 +7,9 @@
 
     {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
+    <main class="site-main" aria-label="Content">
       <div class="wrapper">
-        <div class="main">
+        <div class="inner-wrapper">
           {{ content }}
         </div>
       </div>
@@ -17,6 +17,7 @@
 
     {% include footer.html %}
 
+    {% include scripts.html %}
   </body>
 
 </html>

@@ -1,0 +1,10 @@
+# Blog posts' subjects and index order (using name variables in the front matter)
+
+subjects:
+  sass-awesome-docs:
+    title:
+      ko: 멋진 Sass 설명서
+      en: Awesome Sass Docs
+    names:
+#      - sass-awesome-docs-first-sass
+      - sass-awesome-docs-output-style

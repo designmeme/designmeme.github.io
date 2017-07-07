@@ -13,3 +13,14 @@
   margin: -1px;
   clip: rect(0, 0, 0, 0);
 }
+
+.clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

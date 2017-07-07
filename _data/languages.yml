@@ -1,2 +1,6 @@
-ko: 한국어
-en: English
+ko:
+  label: 한국어
+  locale: ko_KR
+en:
+  label: English
+  locale: en_US

@@ -1,6 +1,8 @@
-{% assign date = post.date | default: page.date %}
+{% assign date = include.date %}
+<time datetime="{{ date | date_to_xmlschema }}" itemprop="datePublished">
 {% if page.lang == 'ko' %}
   {{ date | date: "%Y년 %-m월 %-d일" }}
 {% else %}
-  {{ date | date: "%b %-d, %Y" }}
+  {{ date | date_to_string }}
 {% endif %}
+</time>

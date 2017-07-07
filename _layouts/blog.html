@@ -1,52 +1,43 @@
 ---
 layout: default
 ---
+<div class="page">
 
-<div class="home">
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+    {% if page.subtitle %}
+      <p class="page-subtitle"> {{ page.subtitle }}</p>
+    {% endif %}
+  </header>
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+  <div class="page-content">
+    {{ content }}
 
-  <ul class="post-list">
-    {% assign posts=site.posts | where:"lang", page.lang %}
-    {% for post in posts %}
-    <li>
-      <time class="post-meta" datetime="{{ post.date | date_to_xmlschema }}">{% include date.html %}</time>
-      <h2>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-          {% if post.subtitle %}
+    <div class="blog">
+    {% assign subjects = site.data.posts.subjects %}
+    {% for subject in subjects %}
+      {% if subject[1].title[page.lang] %}
+      <h2 class="post-subject-title">{{ subject[1].title[page.lang] }} ({{subject[1].names.size}})</h2>
+      {% assign names = subject[1].names %}
+      <ul class="post-list">
+        {% for name in names %}
+        {% assign post = site.posts | where:"name", name | where:"lang", page.lang %}
+        {% assign post = post[0] %}
+        {% if post.title %}
+        <li>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+            {% if post.subtitle %}
             <small class="post-subtitle">{{ post.subtitle }}</small>
-          {% endif %}
-        </a>
-      </h2>
-    </li>
+            {% endif %}
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
     {% endfor %}
-  </ul>
-
-  <!--<p class="rss-subscribe"><a href="{{ site.feed[page.lang] | relative_url }}">RSS feed</a></p>-->
-
-  <h1 class="page-heading">Pages about Front-end Web Development</h1>
-
-  <ul class="post-list">
-    <li>
-      <div class="post-meta">Baseline Ratio Database of Google Fonts</div>
-      <a class="post-link" href="{{ 'finding-baseline/' | relative_url }}">Finding Baseline</a>
-    </li>
-    <li>
-      <div class="post-meta">Baseline Ratio Calculator of Google Fonts</div>
-      <a class="post-link" href="{{ 'finding-baseline/baseline-calculator/' | relative_url }}">Baseline Calculator</a>
-    </li>
-  </ul>
-
-  <h1 class="page-heading">Personal Pages</h1>
-
-  <ul class="post-list">
-    <li>
-      <div class="post-meta">비트코인 영문 뉴스 번역 블로그</div>
-      <a class="post-link" href="{{ 'bitcoin-news/' | relative_url }}">Bitcoin News | 비트코인 취미로 뉴스</a>
-    </li>
-  </ul>
+    </div>
+  </div>
 
 </div>
