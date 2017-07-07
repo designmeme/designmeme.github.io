@@ -98,7 +98,7 @@ layout: default
         {% assign post = post[0] %}
         {% if post.title %}
         <li {% if post.title == page.title %}class="active"{% endif %}>
-          <a class="sub-link" href="{{ post.url | relative_url }}">
+          <a class="sub-link" href="{{ post.url | relative_url }}" target="_blank">
             {{ post.title | escape }}
           </a>
         </li>
