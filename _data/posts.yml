@@ -6,5 +6,6 @@ subjects:
       ko: 멋진 Sass 설명서
       en: Awesome Sass Docs
     names:
-#      - sass-awesome-docs-first-sass
+      - sass-awesome-docs
       - sass-awesome-docs-output-style
+    image: /assets/image/post/sass3.jpg

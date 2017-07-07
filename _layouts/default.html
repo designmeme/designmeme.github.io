@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}" {% if page.image %}class="has-image"{% endif %}>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" {% if page.image or site.data.posts.subjects[page.subject].image %}class="has-image"{% endif %}>
 
   {% include head.html %}
 

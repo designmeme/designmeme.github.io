@@ -2,9 +2,10 @@
 layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  {% if page.image %}
-  <div class="page-image" style="background-image: url({{ page.image }})">
-    <div class="inner"><img src="{{ page.image }}" alt=""></div>
+  {% if page.image or site.data.posts.subjects[page.subject].image %}
+  {% assign image = page.image | default: site.data.posts.subjects[page.subject].image %}
+  <div class="page-image" style="background-image: url({{ image }})">
+    <div class="inner"><img src="{{ image }}" alt=""></div>
   </div>
   {% endif %}
 

@@ -5,6 +5,7 @@
 .page-image {
   margin: 0 -16.67% $section-margin / 2;
   background: 50% 50% no-repeat;
+  background-size: cover;
   @include media-breakpoint-up(md) {
     margin-left: 0;
     margin-right: -($min-aside-outer-width);
