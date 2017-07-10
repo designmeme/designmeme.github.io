@@ -1,10 +1,18 @@
-# designmeme.github.io
+# Multilingual Jekyll Website 
+This is the source code of my personal website using Github Pages and [jekyll](http://jekyllrb.com).
+It is a multilingual website in Korean and English.
 
-Source code of the website using Github Pages and [jekyll][].
+## Sitemap
+1. Home (soon)
+1. About
+1. Projects (soon)
+1. Blog
 
-## Copyright and license
+## About
+Hi, I'm Jihye Lee, a freelance front-end web developer in Seoul, South Korea.
 
-Copyright 2017 Jihye Lee.
-Contents released under [Creative Commons BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
-
-[jekyll]: http://jekyllrb.com/
+## License
+Copyright © 2017 Jihye Lee  
+Some Rights Reserved.  
+Code released under [MIT License](./license).  
+Post Contents released under [Creative Commons BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
