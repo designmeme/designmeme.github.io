@@ -1,0 +1,14 @@
+{% assign names = site.data.posts.subjects[page.subject].names %}
+<ul>
+  {% for name in names %}
+    {% assign post = site.posts | where:"name", name | where:"lang", page.lang %}
+    {% assign post = post[0] %}
+    {% if post.title %}
+    <li>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>

@@ -3,9 +3,9 @@
 subjects:
   sass-awesome-docs:
     title:
-      ko: 멋진 Sass 설명서
+      ko: 친절한 Sass 설명서
       en: Awesome Sass Docs
     names:
       - sass-awesome-docs
       - sass-awesome-docs-output-style
-    image: /assets/image/post/sass-docs.jpg
+    image: /assets/image/post/sass-docs.png
