@@ -5,7 +5,7 @@ title:    친절한 Sass 설명서
 subtitle: 모두를 위한 꼼꼼한 가이드북
 tags:     sass, scss, css
 image:    
-date:             2017-07-07 13:35:00 +0900
+date:             2017-07-10 18:00:00 +0900
 last_modified_at: 
 ---
 
