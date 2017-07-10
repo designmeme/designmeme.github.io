@@ -2,7 +2,7 @@
 
 ko:
   home:
-    title: 이지혜 Jihye Lee
+    title: 이지혜, 프론트엔드 웹 개발자
     url: /
   about:
     title: About
@@ -23,7 +23,7 @@ ko:
 
 #en:
 #  home:
-#    title: Jihye Lee 이지혜
+#    title: Jihye Lee, Front-end Web Developer
 #    url: /en/
 #  about:
 #    title: About
