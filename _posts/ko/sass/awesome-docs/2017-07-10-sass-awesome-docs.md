@@ -3,6 +3,7 @@ subject:  sass-awesome-docs
 name:     sass-awesome-docs
 title:    친절한 Sass 설명서
 subtitle: 모두를 위한 꼼꼼한 가이드북
+excerpt:  문장을 풀어내고, 서로 연결하고, 내용을 덧붙여서 꼼꼼하고 친절하게 설명합니다. 
 tags:     sass, scss, css
 image:    
 date:             2017-07-10 18:00:00 +0900
