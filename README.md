@@ -14,5 +14,5 @@ Hi, I'm Jihye Lee. I'm a freelance front-end web developer in Seoul, South Korea
 ## License
 Copyright © 2017 Jihye Lee  
 Some Rights Reserved.  
-Code released under [MIT License](./license).  
+Code released under [MIT License](./LICENSE).  
 Post contents released under [Creative Commons BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
