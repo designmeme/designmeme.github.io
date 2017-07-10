@@ -5,6 +5,7 @@
 
   {% capture title %}{% if page.title %}{{ page.title | escape }} – {% endif %}{{ site.title | escape }}{% endcapture %}
   {% capture description %}{% if page.subtitle %}{{ page.subtitle | escape }} – {% endif %}{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endcapture %}
+  {% capture image %}{{ page.image | default: site.data.posts.subjects[page.subject].image | default: site.image | absolute_url }}{% endcapture %}
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
   <meta name="author" content="{{ site.author }}">
@@ -14,7 +15,7 @@
   <meta property="og:site_name"   content="{{ site.title | escape }}">
   <meta property="og:title"       content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:image"       content="{{ page.image | default: site.image | absolute_url }}">
+  <meta property="og:image"       content="{{ image }}">
   <meta property="og:locale"      content="{{ site.data.languages[page.lang].locale }}">
   <meta property="fb:app_id"      content="{{ site.facebook_app_id }}">
   <script type="application/ld+json">
@@ -24,7 +25,7 @@
     "headline": "{{ title }}",
     "description": "{{ description }}",
     "url": ""{{ page.url | absolute_url }}"
-    "image": "{{ page.image | default: site.image | absolute_url }}",
+    "image": "{{ image }}",
     "publisher": {
       "@type": "Organization",
       "logo": {"@type": "ImageObject", "url": ""}
