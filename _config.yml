@@ -9,7 +9,7 @@ description:      Freelance Font-end Web Developer
 author:           이지혜 Jihye Lee
 email:            ghe.lee19@gmail.com
 
-image:            "" # og_image, fb 고해상도 1200x630px, 8MB 이하
+image:            /assets/image/common/feature.png # og_image, fb 고해상도 1200x630px, 8MB 이하
 google_adsense:   ca-pub-5213448719952520
 google_analytics: UA-93339811-1
 facebook_app_id:  127116027879734
