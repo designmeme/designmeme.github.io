@@ -1,0 +1,233 @@
+career:
+  - title: 프리랜서 프론트엔드 웹 개발자
+    date: [2011-08, present]
+    description: 2011년, 직군이 생소하던 그때부터 프리랜서로서 시작하여 현재까지 일하고 있습니다.
+
+  - title: 디자인하우스 월간디자인 편집부 기자 인턴
+    date: [2010-04, 2010-09]
+    description: 디자인 잡지사에서 인턴 기자로서 5월호부터 10월호까지 참여했습니다.
+
+education:
+  - title: 홍익대학교 산업디자인과 학사
+    date: [2005-02, 2010-08]
+    description:
+
+projects:
+  - title: 김메리 2.0 반응형 웹사이트
+    date: [2016-12, 2017-01]
+    description: 웨딩 스드메 견적 비교 사이트로 오픈 이후에 개선 작업도 몇 주간 진행하였습니다.
+    client: 김메리
+    url: http://www.kimmarry.com
+    tags: [mobile, tablet, desktop]
+    featured: true
+
+  - title: 웨딩마루, 스튜디온, 웨딩북 - 웨딩 업체를 위한 웹 ERP
+    date: [2014-08, 2017-01]
+    description: 드레스샵, 스튜디오 등 웨딩 업체를 위한 ERP 사이트로 오픈 이후에 계속하여 개선 작업도 매주 진행하였습니다. 프론트엔드 개발뿐만 아니라 기획도 함께 참여하였습니다.
+    client: 하우투메리
+    url: http://www.wdgbook.com
+    tags: [mobile, tablet, desktop]
+    featured: true
+
+  - title: 이디움펀딩 반응형 웹사이트
+    date: [2016-04, 2016-07]
+    description:
+    client: 이디움펀딩
+    url: https://www.ediumfunding.com
+    tags: [mobile, tablet, desktop]
+    featured: true
+
+  - title: C27 치즈케이크 & 커피 웹사이트
+    date: [2015-06, 2015-07]
+    description: D&G 컴퍼니
+    client: 더생각
+    url: http://www.c27.co.kr
+    tags: [desktop]
+    featured: false
+
+  - title: 성호그룹 웹사이트 및 모바일사이트
+    date: [2015-03, 2015-04]
+    description:
+    client: 아이야
+    url: http://www.isungho.co.kr
+    tags: [mobile, tablet, desktop]
+    featured: true
+
+  - title: D&G 컴퍼니 반응형 웹사이트
+    date: [2014-12, 2014-12]
+    description:
+    client: 더생각
+    url: http://dngcompany.co.kr
+    tags: [mobile, tablet, desktop]
+    featured: false
+
+  - title: 사진복덕방 반응형 웹사이트
+    date: [2014-10, 2014-10]
+    description:
+    client: 코자인
+    url: http://www.howmuchvideo.com
+    tags: [mobile, tablet, desktop]
+    featured: true
+
+  - title: LG Careers 웹 접근성 검수 및 개편
+    date: [2014-06, 2014-07]
+    description: LG그룹 채용을 위한 사이트로 웹 접근성 인증 마크 획득을 위해 기존 웹사이트를 검수하고 개선했습니다.
+    client: 빌리언달러컴퍼니
+    url: http://apply.lg.com
+    tags: [universal-access]
+    featured: true
+
+  - title: 웨딩드레스샵 아비가일 반응형 웹사이트
+    date: [2014-05, 2014-05]
+    description: 관리자 웹사이트도 함께 작업하였습니다.
+    client: 하우투메리
+    url: http://avigail.co.kr
+    tags: [mobile, tablet, desktop]
+    featured: false
+
+  - title: Ubay 골동품 경매 웹사이트
+    date: [2014-04, 2014-04]
+    description:
+    client: 호감
+    url:
+    tags: [desktop]
+    featured: false
+
+  - title: arTweet 예술품 경매 웹사이트
+    date: [2014-04, 2014-04]
+    description:
+    client: 호감
+    url:
+    tags: [desktop]
+    featured: false
+
+  - title: 엑스타 슈퍼챌린지 웹사이트 (웹 접근성)
+    date: [2014-02, 2014-03]
+    description:
+    client: 플레이그라운드
+    url: http://superchallenge.co.kr
+    tags: [desktop, universal-access]
+    featured: false
+
+  - title: 웨딩드레스샵 플로렌스 반응형 웹사이트
+    date: [2014-02, 2014-02]
+    description: 관리자 웹사이트도 함께 작업하였습니다.
+    client: 하우투메리
+    url: http://florence.co.kr
+    tags: [mobile, tablet, desktop]
+    featured: false
+
+  - title: LG Artcool 웹사이트
+    date: [2014-01, 2014-01]
+    description:
+    client: 뉴디움
+    url:
+    tags: [desktop]
+    featured: false
+
+  - title: 현대자동차 제네시스 이러닝 웹사이트
+    date: [2014-01, 2014-01]
+    description:
+    client: 뉴디움
+    url:
+    tags: [desktop]
+    featured: false
+
+  - title: 투어팁스 하이브리드앱
+    date: [2013-12, 2013-12]
+    description:
+    client: 투어팁스
+    url:
+    tags: [mobile]
+    featured: true
+
+  - title: KB국민은행 희망별 웹 & 모바일사이트 (웹 접근성)
+    date: [2013-08, 2013-10]
+    description: 웹 접근성 가이드라인을 준수한 프로젝트로, 웹 접근성 컨설팅 업체 웹와치의 3회 자문과 검수를 거쳤습니다. 관리자 웹사이트도 함께 작업하였습니다.
+    client: 온라인파워스
+    url: https://withkb.kbstar.com
+    tags: [desktop, universal-access]
+    featured: true
+
+  - title: 웨딩 스냅작가 예약 서비스 비하인드스토리 웹사이트
+    date: [2013-07, 2013-07]
+    description:
+    client: 온라인파워스
+    url:
+    tags: [desktop]
+    featured: false
+
+  - title: SK C&C 프로젝트 관리 시스템(PMS) 웹사이트 개편
+    date: [2013-06, 2013-07]
+    description: 웹 표준 준수, 가변형 레이아웃 및 그리드 적용, 요소 스타일 규격화, 테마 색상 및 아이콘 폰트 적용 등 개편 작업을 진행했습니다.
+    client: SK C&C
+    url:
+    tags: [tablet, desktop]
+    featured: false
+
+  - title: NH농협카드 채움진 웹사이트 웹 접근성 검수
+    date: [2013-05, 2013-05]
+    description: 기존 웹사이트의 웹 접근성을 검수하였으며 이후 한국웹접근성인증평가원 WA인증마크를 획득하였습니다.
+    client: 아이에이커뮤니케이션즈
+    url:
+    tags: [universal-access]
+    featured: false
+
+  - title: 현대카드뮤직 2.0 반응형 웹사이트
+    date: [2013-02, 2013-03]
+    description: 메인 및 결재 페이지와 하이브리드 앱을 위한 페이지를 작업하였습니다.
+    client: 온라인파워스
+    url:
+    tags: [mobile, tablet, desktop]
+    featured: true
+
+  - title: 테크밸리주식회사 웹사이트
+    date: [2013-02, 2013-03]
+    description:
+    client: 코자인
+    url: http://www.techvalley.co.kr
+    tags: [desktop]
+    featured: false
+
+  - title: 광운대학교 산학협력단 웹사이트
+    date: [2013-01, 2013-01]
+    description:
+    client: 코자인
+    url: http://iacf.kw.ac.kr
+    tags: [desktop]
+    featured: false
+
+  - title: 현대자동차 일마일 웹 & 모바일사이트
+    date: [2012-08, 2012-12]
+    description: 3개월간 웹 & 모바일사이트와 관리자 사이트를 같은 분야 3명의 개발자와 함께 작업했습니다. 이후 2개월간 개선 작업을 전담하였습니다.
+    client: 유아이랩
+    url:
+    tags: [mobile, tablet, desktop]
+    featured: true
+
+  - title: 네이든앤드류 잉글리쉬 에듀 웹사이트
+    date: [2012-07, 2012-07]
+    description:
+    client: 더생각
+    url:
+    tags: [desktop]
+    featured: false
+
+  - title: iOS 앱 썸네일스케치 소개용 반응형 웹사이트
+    date: [2011-08, 2011-12]
+    description:
+    client:
+    url:
+    tags: [mobile, tablet, desktop]
+    featured: false
+
+
+skills:
+  - 웹 표준, 브라우저 호환성, 반응형 웹, 웹 접근성, SEO
+  - HTML5, Jekyll, Liquid
+  - CSS3, Sass, Bootstrap
+  - JavaScript, jQuery
+  - npm, Gulp
+  - Git, GitHub, GibLab
+  - Chrome DevTools, Browsersync, VirtualBox
+  - WebStorm

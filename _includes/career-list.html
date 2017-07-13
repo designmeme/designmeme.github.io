@@ -1,0 +1,53 @@
+{% assign careers = include.careers %}
+<dl class="career-list">
+{% for career in careers %}
+  <dt class="career-title {% if career.featured %}featured{% endif %}">{{ career.title }}</dt>
+
+  <dd class="career-meta">
+    {% assign start = career.date[0] | append: '-01' %}
+    {% assign end = career.date[1] | append: '-01' %}
+    <span class="career-date">
+      <time datetime="{{ start | date_to_xmlschema }}">
+      {% if page.lang == 'ko' %}
+        {{ start | date: "%Y년 %-m월" }}
+      {% else %}
+        {{ start | date: "%b %Y" }}
+      {% endif %}
+      </time>
+      {% if end == 'present-01' %}
+        &ndash; {% if page.lang == 'ko' %}현재{% else %}Present{% endif %}
+      {% elsif end != start %}
+        &ndash; <time datetime="{{ end | date_to_xmlschema }}">
+        {% if page.lang == 'ko' %}
+          {{ end | date: "%Y년 %-m월" }}
+        {% else %}
+          {{ end | date: "%b %Y" }}
+        {% endif %}
+        </time>
+      {% endif %}
+    </span>
+
+    {% if career.client %}
+    &middot; <span class="career-client" title="Client">{{ career.client }}</span>
+    {% endif %}
+
+    {% if career.tags %}
+    &middot; <span class="career-tags">
+    {% for tag in career.tags %}
+      <i class="fa fa-{{ tag }}" aria-hidden="true"></i>
+      <span class="sr-only">{% if tag == "universal-access" %}web accessibility{% else %}{{ tag }}{% endif %}</span>
+    {% endfor %}
+    </span>
+    {% endif %}
+  </dd>
+
+  {% if career.description %}
+  <dd class="career-description">{{ career.description }}</dd>
+  {% endif %}
+
+  {% if career.url %}
+  <dd class="career-url"><a href="{{ career.url }}">{{ career.url }}</a></dd>
+  {% endif %}
+
+{% endfor %}
+</dl>
