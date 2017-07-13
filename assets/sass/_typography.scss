@@ -115,6 +115,7 @@ a {
 
 .side-by-side { // for english written side by side
   @extend sup;
+  margin-left: -.25em;
   font-style: normal;
   color: $text-color-muted;
   font-weight: 300;
