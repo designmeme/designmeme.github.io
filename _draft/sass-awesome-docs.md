@@ -1,57 +1,3 @@
-
-Sass 시작하기
-Syntactically Awesome StyleSheets 문법이 짱/대박 멋진 스타일시트
-이름, 두 개의 문법에서 선택하기
-개발 환경 설정하기
-프리프로세서 -> 장단점 단점은 컴파일해야한다!
-
-
-## 특징 
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#features
-- 완전 CSS 호환성
-- 언어 확장: 변수, 중첩, 믹스인
-- 유용한 함수: 색상 등 값 조정하기
-- 고급 기능: 라이브러리를 위한 제어 지시문
-- 서식에 맞는 결과물: 사용자 정의 가능
-
-***
-
-## 문법 
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax
-SCSS: 
-Sassy CSS 의미, the CSS-extension syntax
-공식 웹사이트 문서 페이지에서 사용됨, http://sass-lang.com/guide 가이드 페이지에 예시가 우선으로 작성됨.
-CSS 문법의 확장형 -> 문법에 맞는 CSS 구문은 SCSS 파일에서도 완벽히 호환된다는 뜻. 대다수의 CSS 핵과 특정 브라우저용 문법 (예. IE filter)도 이해함.
-.scss 확장자를 사용함.
-
-Sass (예전 문법, Sass’s indented syntax)
-http://sass-lang.com/documentation/file.INDENTED_SYNTAX.html
-CSS를 좀 더 간단히 작성하기
-1.선택자의 중첩을 나타내기 위해 브라켓이 아니라 속성 블록을 구분하기 위해 들여쓰기로 대신함
-2.속성을 구분하기 위해 세미콜론 대신 줄바꿈을 사용함
-이런 이유 때문에 SCSS보다 읽기 쉽고 빨리 쓸 수 있어 선호함.
-CSS와 호환되지 않음.
-.sass 확장자를 사용함.
-
-두 문법은 동일한 기능을 가지고 있지만, 문법이 서로 다름.
-서로의 다른 확장자의 파일을 import 할 수 있음.
-
-서로의 파일 확장자 변경하려면 `sass-convert` 명령어를 사용한다.
-내용과 확장자를 변경해줌
-
-tip: scss 멀티라인 지원안함. 이슈가 2011년부터 수정안되고 있음. 
-
-.sass 약식 구문 예시 필요할까? -> 서문에 sass 문법은 안나온다고 알려야
-***
-
-## Sass 사용하기
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass
-
-넘 어렴, 환경이 다름...
--> npm, jekyll 사용으로 나중에 내용추가 해야게뜸
-
-***
-
 ## CSS Extensions 확장
 http://sass-lang.com/documentation/file.SASS_REFERENCE.html#css_extensions
 
@@ -789,7 +735,13 @@ http://sass-lang.com/documentation/file.SASS_REFERENCE.html#function_directives
 예로 `add-column`이라는 함수을 정의했다면, `add-column`와 `add_column` 둘 모두로 호출할 수 있다.
 
 ***
+## Sass 사용하기
+http://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass
 
+넘 어렴, 환경이 다름...
+-> npm, jekyll 사용으로 나중에 내용추가 해야게뜸
+
+***
 
 # 치트시트 -> 단독 포스트로 분리 
 - 한번에 보여주기 (내장 함수 제외)

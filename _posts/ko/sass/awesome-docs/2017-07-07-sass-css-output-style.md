@@ -1,13 +1,13 @@
 ---
 subject:  sass-awesome-docs
-name:     sass-awesome-docs-output-style
-title:    Sass 출력 스타일
+name:     sass-css-output-style
+title:    CSS 출력 스타일
 subtitle: 4가지 CSS 양식 중 마음에 드는 것을 선택하세요
 excerpt:  Sass는 사용자의 취향과 필요에 맞춰 다양한 출력 스타일을 지원합니다.
 tags:     sass, scss, css
 image:    
 date:             2017-07-07 10:23:00 +0900
-last_modified_at: 2017-07-07 17:07:00 +0900
+last_modified_at: 2017-07-13 16:50:00 +0900
 ---
 
 * Will be replaced with the ToC
@@ -17,7 +17,7 @@ Sass의 기본 CSS 출력 스타일인 중첩 스타일은 문서의 구조를 �
 사용자의 취향과 필요에 맞춰 Sass는 다양한 출력 스타일을 지원합니다.
 [원문](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style){:.original-link target="_blank"}
 {: .lead}
-<!--more-->
+
 ***
 
 ##### `:nested` 
@@ -114,4 +114,4 @@ sass --watch style.scss:style.css --style compressed
 이외에도 개발 환경에 따라 각기 다른 방법으로 출력 스타일 옵션을 지정할 수 있습니다.
 
 
-[^option]: 루비 온 레일즈*Ruby on Rails*{: .side-by-side} 나 랙*Rack*{: .side-by-side}등 루비 기반 환경설정 파일에서 [옵션](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#options)을 설정할 수 있습니다.
+[^option]: 루비 온 레일즈 *Ruby on Rails*{: .side-by-side} 나 랙 *Rack*{: .side-by-side}등 루비 기반 환경설정 파일에서 [옵션](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#options)을 설정할 수 있습니다.
