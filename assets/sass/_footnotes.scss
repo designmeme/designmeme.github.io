@@ -22,16 +22,21 @@
   }
   li {
     counter-increment: step-counter;
-    text-indent: -3em;
-    p:before {
-      content: counter(step-counter) ')';
-      display: inline-block;
-      box-sizing: border-box;
-      width: 3em;
-      padding-right: .5em;
-      text-align: right;
-      color: $brand-primary;
-      font-weight: 700;
+    p {
+      position: relative;
+      &:before {
+        position: absolute;
+        right: 100%;
+        top: 0;
+        content: counter(step-counter) ')';
+        display: inline-block;
+        box-sizing: border-box;
+        width: 3em;
+        padding-right: .5em;
+        text-align: right;
+        color: $brand-primary;
+        font-weight: 700;
+      }
     }
   }
   @at-root html:not(.footnotes-lifted) & {
