@@ -84,18 +84,18 @@ code.highlighter-rouge {
   .mo    { color: $hl-orange; } // Literal.Number.Oct
 
   .n     { color: $hl-muted; } // Name
-  .na    { color: $hl-blue; } // Name.Attribute
+  .na    { color: $hl-gray; } // Name.Attribute // SCSS - some property name
   .nb    { color: $hl-blue; } // Name.Builtin
-  .nc    { color: $hl-yellow; font-weight: bold; } // Name.Class
+  .nc    { color: $hl-yellow; font-weight: bold; } // Name.Class // CSS & SCSS - class selector
   .nd    { color: $hl-aqua; }
   .ne    { color: $hl-error; font-weight: bold; } // Name.Exception
-  .nf    { color: $hl-blue; font-weight: bold } // Name.Function
+  .nf    { color: $hl-blue; font-weight: bold; } // Name.Function // CSS - id selector
   .ni    { color: $hl-gray; } // Name.Entity
-  .nl    { color: $hl-gray; }
-  .nn    { color: $hl-yellow; } // Name.Namespace
+  .nl    { color: $hl-gray; } // CSS & SCSS - property name
+  .nn    { color: $hl-blue;  font-weight: bold; } // Name.Namespace // SCSS - id selector
   .no    { color: $hl-yellow; } // Name.Constant
-  .nt    { color: $hl-aqua; } // Name.Tag
-  .nv    { color: $hl-error; } // Name.Variable
+  .nt    { color: $hl-aqua; } // Name.Tag // CSS - tag selector
+  .nv    { color: $hl-error; } // Name.Variable // SCSS - placeholder selector
   .nx    { color: $hl-blue; }
 
   .o     { color: $hl-gray; } // Operator
