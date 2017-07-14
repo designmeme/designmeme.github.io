@@ -3,11 +3,11 @@ subject:  sass-awesome-docs
 name:     write-sass-with-scss
 title:    Sass는 SCSS로 쓰세요
 subtitle: Sass를 Sass로 쓰지 않는 이유
-excerpt:  
+excerpt:  Sass의 큰 장점 중 하나인 CSS 완전 호환성은 SCSS 문법 사용을 전제로 누릴 수 있습니다.
 tags:     sass, scss, css
 image:    
 date:             2017-07-13 22:30:00 +0900
-last_modified_at: 
+last_modified_at: 2017-07-14 11:06:00 +0900
 ---
 
 * Will be replaced with the ToC
@@ -72,7 +72,8 @@ Sass 문법으로 작성한 Sass 파일은 `.sass` 확장자를 사용합니다.
 읽기 쉽고 빨리 쓸 수 있어 Sass 문법을 더 좋아하는 사람들이 있습니다.
 하지만 아래의 이유로 **SCSS를 쓰기를 권장**합니다.
 
-- **더 많은 사용자**: 공식 레퍼런스와 다수의 라이브러리, 프레임워크가 SCSS 문법을 활용하는 등 새로운 문법이 더욱 널리 쓰입니다.
+- **공식 문법**: 공식 레퍼런스는 SCSS 문법을 기준으로 모든 문법을 설명하고 예시를 보여줍니다.
+- **더 넓은 사용자**: 다수의 라이브러리, 프레임워크가 SCSS 문법을 활용하는 등 새로운 문법이 더욱 널리 쓰입니다.
 - **CSS 호환성**: 친근한 CSS 문법은 Sass와 CSS 사이의 심리적 틈을 줄여주고, 기능적으로도 확장성을 높입니다.
 - **여러 줄 쓰기 지원**: Sass 문법은 들여쓰기와 줄 바꿈이 문법의 중요한 요소이기 때문에, 반대로 여러 줄 쓰기를 지원하지 않습니다.[^multiline]
 
@@ -97,8 +98,7 @@ $breakpoints: ( sm: 480px, md: 768px, lg: 1024px )
 두 문법은 같은 기능을 가지고 있고 다른 확장자의 파일을 서로 불러올 수 있습니다.
 즉 `.sass` 파일에서 `.scss`파일을 불러오거나 그 반대로 할 수 있습니다.
 
-Sass는 버전 3으로 업그레이드하면서 기존 들여쓰기 문법 사용자가 SCSS 문법으로 변경하도록 도와주는
-[문서](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html)도 함께 제공했습니다. 
+Sass는 버전 3으로 업그레이드하면서 기존 [들여쓰기 문법 사용자를 위한 SCSS 문법](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html) 문서도 함께 제공했습니다. 
 Sass에서 SCSS로 문법을 바꾸려는 분들은 참고해주세요.
 
 `sass-convert` 커맨드라인 도구를 사용해서 한 문법에서 다른 문법으로 자동으로 파일을 변환할 수 있습니다.

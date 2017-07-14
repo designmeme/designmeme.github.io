@@ -3,7 +3,7 @@ subject:  sass-awesome-docs
 name:     make-awesome-stylesheets-with-sass
 title:    Sass 시작하기
 subtitle: 스타일시트를 작성하는 멋진 방법
-excerpt:  Sass는 Syntactically Awesome StyleSheets의 약자로 문법이 멋진 스타일시트라는 의미입니다.
+excerpt:  Sass는 'Syntactically Awesome StyleSheets'의 약자로 문법이 멋진 스타일시트라는 의미입니다.
 tags:     sass, scss, css
 image:    
 date:             2017-07-13 17:03:00 +0900
