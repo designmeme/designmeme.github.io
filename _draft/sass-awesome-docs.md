@@ -1,39 +1,3 @@
-## CSS Extensions 확장
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#css_extensions
-
-### 규칙 중첩
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#nested_rules
-CSS 규칙을 서로 중첩하여 작성할 수 있다.
-부모 선택자를 계속 반복하는 것을 해결해주고, 중첩된 선택자를 많이 사용하는 복잡한 CSS 문서 구조를 간략하게 하고 알아보기 쉽게 한다.
-
-### 부모 참조 선택자: &
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#parent-selector
-규칙 중첩에서 부모 선택자와 자식 선택자의 중첩을 해결했다면, 부모 참조 선택자는 부모 선택자를 더 긴밀하다고 보면됨.
-부모 자식의 순서가 아니라, 다양한 부모 선택자의 조합을 상요하려면 부모 참조 선택자를 사용한다.
-1. 내부 규칙에 부모 선택자의 가상 요소나 상태 hover 같은 것 사용
-2. 부모 선택자의 부모 선택자를 사용
-주의: &가 대체하는 부모 선택자가 중첩된 선택자일 경우 &가 사용되기 바로 전까지 모두 사용됨.
-
-&:hovered 처럼 &와 합쳐진 선택자를 쓸경우, &는 항상 단어 앞에 와야 한다. *뒤나 중간에 붙을 수 없다.
-CSS 선택자 외에, 접미사를 붙일 수 있다. &-some-word
-
-### 속성 중첩
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#nested_properties
-font, background, padding 등은 단축 속성이다.
-https://developer.mozilla.org/ko/docs/Web/CSS/Shorthand_properties
-font-family, font-size, font-weight는 font라는 하나의 네임스페이스에 속한 것으로 보고, 각각을 하위 속성으로 하여 중첩하여 작성할 수 있다.
-기존 단축속성 작성 문법과 섞어서 사용할 수 있다.
-이때 단축속성은 그대로 사용되고 속성 중첩은 따로 작성된다.
-*font 단축속성에는 line-height가 있지만, 이는 sass에서 font 네임스페이스의 하위 속성으로는 들어갈 수 없다.
-
-### 플레이스홀더 선택자: %, `@extend`에서 활용함
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#placeholder_selectors_
-아이디 선택자 #와 클래스 선택자 . 와 비슷함.
-이런 이유로 `@extend` 지시자와 함께 쓸수 있다. (참조 페이지 링크 들어가야함)
-
-`@extend` 없이 작성된 그 자체의 규칙 집합은 CSS로 변환되지 않는다. (변수처럼)
-
-***
 
 ## 주석 /* */ 와 //
 http://sass-lang.com/documentation/file.SASS_REFERENCE.html#comments
