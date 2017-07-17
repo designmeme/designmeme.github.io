@@ -15,7 +15,7 @@
   list-style: none;
   padding: 0;
   margin-bottom: $section-margin / 2;
-  @extend p.small;
+  @extend .p-small;
   li {
     margin-bottom: 1em;
   }

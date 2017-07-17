@@ -54,8 +54,8 @@ $text-hierarchy: (
   (font-size:  1.50rem, line-height: 2.00rem, selectors: "h3, .h3"),
   (font-size:  1.25rem, line-height: 2.00rem, selectors: "h4, .h4, p.lead"),
   (font-size:  1.00rem, line-height: 1.50rem, selectors: "h5, .h5, body"),
-  (font-size:  0.84rem, line-height: 1.50rem, selectors: "h6, .h6, p.small"),
-  (font-size:  0.72rem, line-height: 1.25rem, selectors: "p.smaller")
+  (font-size:  0.84rem, line-height: 1.50rem, selectors: "h6, .h6, .p-small"),
+  (font-size:  0.72rem, line-height: 1.25rem, selectors: ".p-smaller")
 );
 
 

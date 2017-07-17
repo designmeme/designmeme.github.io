@@ -43,7 +43,7 @@
     position: relative;
     margin-top: $section-margin;
     padding-top: $section-margin / 2;
-    @extend p.small;
+    @extend .p-small;
     &:before {
       content: '';
       position: absolute;
@@ -64,7 +64,7 @@
   }
   @at-root html.footnotes-lifted & {
     margin-top: 0;
-    @extend p.smaller;
+    @extend .p-smaller;
     li {
       @include aside;
     }

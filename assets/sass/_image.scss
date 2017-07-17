@@ -14,7 +14,7 @@ figure {
     display: block;
   }
   figcaption {
-    @extend p.smaller;
+    @extend .p-smaller;
     @include aside;
     margin-top: 1em;
     @include media-breakpoint-up(md) {

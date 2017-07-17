@@ -5,7 +5,7 @@
 
 .sub-nav {
   display: none;
-  @extend p.smaller;
+  @extend .p-smaller;
   opacity: 0;
   position: fixed;
   left: $max-margin;

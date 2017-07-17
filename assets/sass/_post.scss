@@ -6,7 +6,7 @@
 // post meta data
 //
 .post-meta {
-  @extend p.smaller;
+  @extend .p-smaller;
   span {
     display: block;
     .fa {
@@ -85,19 +85,19 @@ $sns-link-width: 3.3rem;
 #markdown-toc {
   margin-top: -($section-margin / 2);
   margin-bottom: $section-margin / 2;
-  @extend p.small;
+  @extend .p-small;
   &:before {
     content: 'Index';
     display: block;
     margin-left: -2em;
-    @extend p.smaller;
+    @extend .p-smaller;
   }
 }
 
 // header original link
 //
 .original-link {
-  @extend p.smaller;
+  @extend .p-smaller;
   font-weight: 400;
   &:after {
     content: ' \f08e';
