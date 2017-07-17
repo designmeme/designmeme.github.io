@@ -3,7 +3,7 @@ subject:  sass-awesome-docs
 name:     sass-css-extensions
 title:    CSS 확장
 subtitle: 중첩과 특수 선택자로 CSS 확장하기
-excerpt:  Sass에서 가장 기본적인 기능으로 활용 범위가 넓은 중첩과 부모 선택자를 설명합니다.
+excerpt:  Sass에서 가장 기본적인 기능으로, 활용 범위가 넓은 중첩과 부모 선택자를 설명합니다.
 tags:     sass, scss, css
 image:    
 date:             2017-07-14 17:07:00 +0900
