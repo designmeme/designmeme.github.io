@@ -15,7 +15,9 @@ education:
 projects:
   - title: 김메리 2.0 반응형 웹사이트
     date: [2016-12, 2017-01]
-    description: 웨딩 스드메 견적 비교 사이트로 오픈 이후에 개선 작업도 몇 주간 진행하였습니다.
+    description: >
+      웨딩 스드메 견적 비교 사이트로 오픈 이후에 개선 작업도 몇 주간 진행하였습니다.<br>
+      사용자 및 판매자 웹사이트 / 모바일 우선 반응형 / Sass 사용 / typeahead.js를 활용한 업체 검색 UI / 이미지 레이지 로딩 처리 / 사진 슬라이더 적용 / SEO 최적화
     client: 김메리
     url: http://www.kimmarry.com
     tags: [mobile, tablet, desktop]
@@ -23,7 +25,11 @@ projects:
 
   - title: 웨딩마루, 스튜디온, 웨딩북 - 웨딩 업체를 위한 웹 ERP
     date: [2014-08, 2017-01]
-    description: 드레스샵, 스튜디오 등 웨딩 업체를 위한 ERP 사이트로 오픈 이후에 계속하여 개선 작업도 매주 진행하였습니다. 프론트엔드 개발뿐만 아니라 기획도 함께 참여하였습니다.
+    description: >
+      드레스샵, 스튜디오 등 웨딩 업체를 위한 ERP 사이트로 오픈 이후에 계속하여 개선 작업도 매주 진행하였습니다. 프론트엔드 개발뿐만 아니라 기획도 함께 참여하였습니다.<br>
+      <b>웨딩마루 2.0</b> - 드레스샵 예약 및 자원 관리 웹사이트 개편 / 캘린더 예약 및 드래그 앤 드롭 UI / 고객카드, 계약서, 드레스 입출고 관련 인쇄 페이지 CSS 작업 / 웨딩마루 BI 통계 사이트 / 고객용 예약 확정 및 안내 모바일 페이지 / 드레스샵 업체 소개 모바일 페이지 / 매주 기능개선 및 이슈처리 사항 업데이트<br>
+      <b>스튜디온</b> - 기획 참여 / 스튜디오 예약 및 자원 관리 웹사이트 / 캘린더 예약 및 상품 관리 UI / 계약 통계를 위한 구글 차트 활용 / 고객카드, 계약서 인쇄 페이지 CSS 작업 / 고객용 예약 확정 및 안내 모바일 페이지 / 매주 기능개선 및 이슈처리 사항 업데이트<br>
+      <b>웨딩북 비즈</b> - 웨딩 업체의 예약 및 계약 관리 반응형 웹사이트 / <b>웨딩북</b> - 사용자를 위한 웨딩 업체 소개 반응형 웹사이트
     client: 하우투메리
     url: http://www.wdgbook.com
     tags: [mobile, tablet, desktop]
@@ -31,7 +37,8 @@ projects:
 
   - title: 이디움펀딩 반응형 웹사이트
     date: [2016-04, 2016-07]
-    description:
+    description: >
+      투자 목록 그리드, 이미지 슬라이더, 투자 상태 상태막대, 팝업 레이아웃 UI 등 / 서식 스타일과 게시판 페이지 등 / 반응형 이메일 페이지 / 관리자 사이트 부트스트랩 활용
     client: 이디움펀딩
     url: https://www.ediumfunding.com
     tags: [mobile, tablet, desktop]
@@ -47,7 +54,8 @@ projects:
 
   - title: 성호그룹 웹사이트 및 모바일사이트
     date: [2015-03, 2015-04]
-    description:
+    description: >
+      상세 페이지 내용은 웹/모바일에서 동일하게 사용하고(반응형), 레이아웃만 웹/모바일에 따라 다르도록 HTML 및 CSS 작업을 진행하였습니다.
     client: 아이야
     url: http://www.isungho.co.kr
     tags: [mobile, tablet, desktop]
@@ -63,7 +71,8 @@ projects:
 
   - title: 사진복덕방 반응형 웹사이트
     date: [2014-10, 2014-10]
-    description:
+    description: >
+      Less 사용 / 테마별 색상 CSS / 각종 컴포넌트 디자인 가이드 맞춰 작업 진행
     client: 코자인
     url: http://www.howmuchvideo.com
     tags: [mobile, tablet, desktop]
@@ -103,7 +112,7 @@ projects:
 
   - title: 엑스타 슈퍼챌린지 웹사이트 (웹 접근성)
     date: [2014-02, 2014-03]
-    description:
+    description: 웹 접근성 가이드를 100% 준수하여 작업하였습니다.
     client: 플레이그라운드
     url: http://superchallenge.co.kr
     tags: [desktop, universal-access]
@@ -152,7 +161,7 @@ projects:
   - title: 웨딩 스냅작가 예약 서비스 비하인드스토리 웹사이트
     date: [2013-07, 2013-07]
     description:
-    client: 온라인파워스
+    client: 하우투메리
     url:
     tags: [desktop]
     featured: false
@@ -199,7 +208,9 @@ projects:
 
   - title: 현대자동차 일마일 웹 & 모바일사이트
     date: [2012-08, 2012-12]
-    description: 3개월간 웹 & 모바일사이트와 관리자 사이트를 같은 분야 3명의 개발자와 함께 작업했습니다. 이후 2개월간 개선 작업을 전담하였습니다.
+    description: >
+      3개월간 웹 & 모바일사이트와 관리자 사이트를 같은 분야 3명의 개발자와 함께 작업했습니다. 이후 2개월간 개선 작업을 전담하였습니다.<br>
+      지도 기반 상점 목록 및 상세 페이지 / 지도내 상점 정보를 보여주는 UI / QA 이슈 처리 및 브라우저 호환성 개선
     client: 유아이랩
     url:
     tags: [mobile, tablet, desktop]
