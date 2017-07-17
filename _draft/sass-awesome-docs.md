@@ -1,17 +1,3 @@
-
-## 주석 /* */ 와 //
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#comments
-CSS 표준 다중줄 주석 /* */를 지원하며, 한 줄 주석을 처리하기 위한 //도 지원한다.
-다중줄 주석은 가능한 경우 CSS 결과물에 남게되며, (출력 모드에 따라 다름)
-한줄 주석은 삭제된다.
-출력 모드가 'compressed'라도 다중줄 주석이 보이게 하려면 주석의 첫글자로 !를 써넣으면 된다.
-문서 상단에 저작권등을 표시할 때 유용하다.
-CSS 결과물 주석내부에 쓰일 글에 변수를 사용하려면 아래와 같이 주석 내부에 변수를 사용한다.
-#{$version}
-참조: http://sass-lang.com/documentation/file.SASS_REFERENCE.html#interpolation_
-
-***
-
 ## SassScript
 http://sass-lang.com/documentation/file.SASS_REFERENCE.html#sassscript
 Sass는 기본 CSS 속성 구문뿐만 아니라 SassScript라는 확장 기능을 제공한다.

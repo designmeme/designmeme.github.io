@@ -7,7 +7,7 @@ excerpt:  Sass는 사용자의 취향과 필요에 맞춰 다양한 출력 스�
 tags:     sass, scss, css
 image:    
 date:             2017-07-07 10:23:00 +0900
-last_modified_at: 2017-07-13 16:50:00 +0900
+last_modified_at: 2017-07-17 18:01:00 +0900
 ---
 
 * Will be replaced with the ToC
@@ -70,7 +70,7 @@ Sass의 기본 CSS 출력 스타일인 중첩 스타일은 문서의 구조를 �
 ##### `:compact`
 
 **축약 스타일**은 중첩 스타일이나 확장 스타일보다 공간을 덜 차지합니다.
-각 CSS 규칙을 단 한 줄에 표시하며 속한 모든 속성도 같은 줄에 작성합니다. 
+각 CSS 규칙을 단 한 줄에 표시하며 속한 모든 속성도 같은 줄에 작성합니다.[^compact]
 줄마다 선택자가 앞에 있어서 속성보다 **선택자**에 더욱 집중하게 합니다.
 
 축약 스타일로 출력한 CSS
@@ -86,7 +86,7 @@ Sass의 기본 CSS 출력 스타일인 중첩 스타일은 문서의 구조를 �
 
 ##### `:compressed`
 **압축 스타일**은 최소한의 공간을 차지하도록 압축한 형태로, 사람이 읽는 상황을 고려하지 않습니다.
-선택자를 구분하는 공백처럼 꼭 필요한 공백이나, 파일 끝에 하나의 새 줄 밖의 공백은 모두 삭제합니다.
+선택자를 구분하는 공백처럼 꼭 필요한 공백이나, 파일 끝에 하나의 새 줄 밖의 공백은 모두 삭제합니다.[^compressed]
 또 다른 소소한 압축도 실행하는데, 색상 값을 **최소 표현**으로 변경합니다.
 
 압축 스타일로 출력한 CSS
@@ -94,6 +94,12 @@ Sass의 기본 CSS 출력 스타일인 중첩 스타일은 문서의 구조를 �
 ~~~ css
 #main{color:#fff;background-color:#000}#main p{width:10em}.huge{font-size:10em;font-weight:bold;text-decoration:underline}
 ~~~
+
+***
+
+##### 출력 스타일에 따른 주석 출력 여부
+{% include post/sass-comments-table.html %}
+주석에 관련한 자세한 내용은 [한 줄 주석 // 여러 줄 주석 /* */](/ko/blog/sass-comments/)에서 확인할 수 있습니다.
 
 ***
 
@@ -114,4 +120,6 @@ sass --watch style.scss:style.css --style compressed
 이외에도 개발 환경에 따라 각기 다른 방법으로 출력 스타일 옵션을 지정할 수 있습니다.
 
 
+[^compact]: 여러 줄로 작성한 주석도 모두 한 줄로 표시합니다.
+[^compressed]: 여러 줄 주석도 모두 삭제합니다. 하지만 주석의 첫 글자로 느낌표 `!`를 써넣으면 삭제하지 않고 출력물에 그대로 표시합니다.
 [^option]: 루비 온 레일즈 *Ruby on Rails*{: .side-by-side} 나 랙 *Rack*{: .side-by-side}등 루비 기반 환경설정 파일에서 [옵션](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#options)을 설정할 수 있습니다.

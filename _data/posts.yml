@@ -10,5 +10,6 @@ subjects:
       - make-awesome-stylesheets-with-sass
       - write-sass-with-scss
       - sass-css-extensions
+      - sass-comments
       - sass-css-output-style
     image: /assets/image/post/sass-docs.png

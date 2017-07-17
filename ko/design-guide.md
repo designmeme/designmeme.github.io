@@ -99,3 +99,13 @@ Person.prototype.sayHello = function(){
   }
 }
 ~~~
+
+코드 설명
+{: .code-label .code-label-css}
+~~~ css
+.funky {
+  font-family: fantasy;
+  font-size: 30em;
+  font-weight: bold;
+}
+~~~

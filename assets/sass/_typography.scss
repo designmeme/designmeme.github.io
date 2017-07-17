@@ -28,7 +28,7 @@ figure {
   margin: 0 0 1.5rem;
 }
 
-li, dd {
+li, dd, td {
   p, ol, ul, dl {
     &:last-child {
       margin-bottom: 0;
@@ -128,4 +128,12 @@ hr { // simply used to separate section
   margin-top: 0;
   margin-bottom: $section-margin;
   border: 0;
+}
+
+.align-right  { text-align: right; }
+.align-left   { text-align: left; }
+.align-center { text-align: center; }
+
+.monospace {
+  font-family: monospace;
 }
