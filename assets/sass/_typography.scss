@@ -94,7 +94,27 @@ dd {
 // Quotes
 //
 blockquote {
+  position: relative;
   padding: 0 2em;
+  &:before,
+  &:after {
+    position: absolute;
+    width: 1em;
+    text-align: center;
+    font-size: 2em;
+    color: $text-color-silver;
+    line-height: 1;
+  }
+  &:before {
+    content: '“';
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    content: '”';
+    bottom: -.5em;
+    right: 0;
+  }
 }
 
 //
