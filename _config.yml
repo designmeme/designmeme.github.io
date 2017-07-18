@@ -12,6 +12,9 @@ email:            ghe.lee19@gmail.com
 image:            /assets/image/common/feature.png # og_image, fb 고해상도 1200x630px, 8MB 이하
 google_adsense:   ca-pub-5213448719952520
 google_analytics: UA-93339811-1
+statcounter:
+  project:        11398249
+  security:       3b7ccf52
 facebook_app_id:  127116027879734
 github_username:  designmeme
 copyright:        © Jihye Lee
