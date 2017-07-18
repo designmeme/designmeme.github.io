@@ -4,7 +4,7 @@ name:     sass-css-output-style
 title:    CSS 출력 스타일
 subtitle: 4가지 CSS 양식 중 마음에 드는 것을 선택하세요
 excerpt:  Sass는 사용자의 취향과 필요에 맞춰 다양한 출력 스타일을 지원합니다.
-tags:     sass, scss, css
+tags:     [sass, scss, css, preprocessor, output styles, comments, options, 옵션, 주석, 출력, 전처리기]
 image:    
 date:             2017-07-07 10:23:00 +0900
 last_modified_at: 2017-07-17 18:01:00 +0900

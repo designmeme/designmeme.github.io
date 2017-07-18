@@ -4,7 +4,7 @@ name:     sass-comments
 title:    한 줄 주석 // 여러 줄 주석 /* */
 subtitle: 출력 스타일에 맞춰 Sass 주석 활용하기
 excerpt:  Sass는 CSS 표준 다중 줄 주석 `/* */`을 지원하며, `//`로 시작하는 한 줄 주석도 함께 지원합니다.
-tags:     sass, scss, css
+tags:     [sass, scss, css, preprocessor, output styles, comments, options, variables, 옵션, 주석, 출력, 전처리기, 보간]
 image:    
 date:             2017-07-17 18:01:00 +0900
 last_modified_at: 

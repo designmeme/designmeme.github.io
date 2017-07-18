@@ -35,7 +35,8 @@ layout: default
       </span>
     </p>
     {% unless page.tags == empty %}
-    <p class="tags" hidden>
+    <p class="tags sr-only">
+      Tags:
       {% for tag in page.tags %}
       <a>{{ tag | downcase }}</a>
       {% endfor %}

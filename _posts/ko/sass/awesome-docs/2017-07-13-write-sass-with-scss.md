@@ -4,7 +4,7 @@ name:     write-sass-with-scss
 title:    Sass는 SCSS로 쓰세요
 subtitle: Sass를 Sass로 쓰지 않는 이유
 excerpt:  Sass의 큰 장점 중 하나인 CSS 완전 호환성은 SCSS 문법 사용을 전제로 누릴 수 있습니다.
-tags:     sass, scss, css
+tags:     [sass, scss, css, preprocessor, syntax, difference, compare, convert, 전처리기, 문법, 비교, 차이, 선택, 변경]
 image:    
 date:             2017-07-13 22:30:00 +0900
 last_modified_at: 2017-07-14 11:06:00 +0900
