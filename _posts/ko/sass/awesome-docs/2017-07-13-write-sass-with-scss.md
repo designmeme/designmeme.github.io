@@ -43,7 +43,7 @@ SCSS 문법으로 작성한 CSS 규칙
 
 [Sass 공식 사이트](http://sass-lang.com/)에 나온 예시는 우선으로 혹은 단독으로 SCSS 문법을 사용합니다.
 또한, 이 글 시리즈의 모든 예시도 SCSS 문법을 따릅니다. SCSS 문법으로 작성한 Sass 파일은 `.scss` 확장자를 사용합니다.
-{:.small}
+{:.p-small}
 
 ***
 
@@ -64,7 +64,7 @@ Sass 문법으로 작성한 CSS 규칙
 ~~~
 
 Sass 문법으로 작성한 Sass 파일은 `.sass` 확장자를 사용합니다.
-{:.small}
+{:.p-small}
 
 ***
 
