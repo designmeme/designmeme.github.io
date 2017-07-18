@@ -7,26 +7,26 @@ excerpt:  문장을 풀어내고, 서로 연결하고, 내용을 덧붙여서 �
 tags:     [sass, scss, css, preprocessor, guide, study, 전처리기, 배우기, 공부, 스터디, 설명]
 image:    
 date:             2017-07-10 18:00:00 +0900
-last_modified_at: 
+last_modified_at: 2017-07-18 19:05:00 +0900
 ---
 
 * Will be replaced with the ToC
 {:toc}
 
-Sass는 참 멋진 CSS 전처리기이지만 Sass 공식 문서는 아주 조금 덜 멋지므로 만든 설명서입니다.
+Sass는 참 멋진 CSS 전처리기이지만 Sass 공식 참고문서는 아주 조금 덜 멋지므로 만든 설명서입니다.
 문장을 풀어내고, 서로 연결하고, 내용을 덧붙여서 꼼꼼하고 친절하게 설명합니다. 
 {: .lead}
 
-[Sass 공식 문서][]는 Sass의 모든 기능[^function]과 문법을 예시와 함께 자세히 설명하고 있습니다.
+[Sass 공식 참고문서][]는 Sass의 모든 기능[^function]과 문법을 예시와 함께 자세히 설명하고 있습니다.
 하지만 함축적으로 표현하여 쉽게 이해가 안 되는 부분도 있고 내용 자체가 어려운 부분도 있습니다.
-이 글 시리즈는 공식 문서를 바탕으로 딱딱한 문장을 풀어서 설명합니다.
+이 글 시리즈는 공식 참고문서를 바탕으로 딱딱한 문장을 풀어서 설명합니다.
 예시가 없이 문장으로만 작성하여 이해하기 어려운 부분은 내용에 따라 목록으로 정리하거나 예시 코드를 함께 보여줍니다.
-나아가 서로 연관된 내용은 링크로 연결하여 연결성을 높이고 새로운 내용도 추가해 공식 문서보다 넓은 범위의 내용을 담고 있습니다.
+나아가 서로 연관된 내용은 링크로 연결하여 연결성을 높이고 새로운 내용도 추가해 원문보다 넓은 범위의 내용을 담고 있습니다.
 
 ***
 
 ##### 용어
-Sass 공식 문서의 영어 원어를 아래와 같이 한글로 표기합니다. CSS와 자바스크립트에서 사용하는 익숙한 용어도 있고 처음 들어 본 낯선 용어도 있습니다.
+Sass 공식 참고문서의 영어 원어를 아래와 같이 한글로 표기합니다. CSS와 자바스크립트에서 사용하는 익숙한 용어도 있고 처음 들어 본 낯선 용어도 있습니다.
 Sass에서 가지는 의미를 중심으로 설명합니다.
 
 CSS 규칙 *rule*{: .side-by-side}과 규칙 집합 *ruleset*{: .side-by-side}
@@ -59,7 +59,7 @@ Sass는 CSS 전처리기로 이름이 `@`로 시작하는 다양한 지시자를
 ##### 목차
 {% include post-list.html %}
 
-[Sass 공식 문서]: http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+[Sass 공식 참고문서]: http://sass-lang.com/documentation/file.SASS_REFERENCE.html
 [^function]: Sass 내장 함수는 이 문서에 포함되어 있지 않으며 [함수 문서](http://sass-lang.com/documentation/Sass/Script/Functions.html)에서 볼 수 있습니다.
 [^directive]: 지시문 또는 지시어라고도 부릅니다.
 [^interpolation]: 프로그래밍에서는 일반적으로 보간법이라고 가장 많이 부르며 내삽(법), 사이 채움 등 다양한 용어로도 씁니다.
