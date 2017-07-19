@@ -1,13 +1,8 @@
-## SassScript
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#sassscript
-Sass는 기본 CSS 속성 구문뿐만 아니라 SassScript라는 확장 기능을 제공한다.
-여기에는 변수 사용, 산수, 기타 기능이 있다. SassScript는 속성값으로 사용할 수 있다.
-선택자나 속성 이름을 만들 수도 있으며, 믹스인 작성시 유용하다. 끼워넣기를 활용한다.
 
-### 대화형 쉘 (Interactive Shell) -> 뒤로
+### SassScript - 대화형 셸 (Interactive Shell)
 http://sass-lang.com/documentation/file.SASS_REFERENCE.html#interactive_shell
-대화형 쉘을 이용하면 SassScript를 쉽게 시험해볼 수 있다.
-쉘을 시작하려면 sass 커맨드라인을 `-i` 옵션과 함께 실행한다.
+대화형 셸을 이용하면 SassScript를 쉽게 시험해볼 수 있다.
+셸을 시작하려면 sass 커맨드라인을 `-i` 옵션과 함께 실행한다.
 실행 후 SassScript 표현을 작성해 넣으면, 계산된 결과를 출력한다.
 * 문서에 작성하기 전에 값을 확인하고 싶거나, 문법을 확인하기위해 사용하면 좋다.
 

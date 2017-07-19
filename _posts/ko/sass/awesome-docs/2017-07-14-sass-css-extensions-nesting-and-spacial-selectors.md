@@ -3,11 +3,11 @@ subject:  sass-awesome-docs
 name:     sass-css-extensions
 title:    CSS 확장
 subtitle: 중첩과 특수 선택자로 CSS 확장하기
-excerpt:  Sass에서 가장 기본적인 기능으로, 활용 범위가 넓은 중첩과 부모 선택자를 설명합니다.
+excerpt:  Sass에서 가장 기본적인 기능으로, 활용 범위가 넓은 중첩과 부모 참조 선택자를 설명합니다.
 tags:     [sass, scss, css, preprocessor, selectors, nesting, 전처리기, 선택자, 중첩]
 image:    
 date:             2017-07-14 17:07:00 +0900
-last_modified_at: 2017-07-18 17:20:00 +0900
+last_modified_at: 2017-07-19 13:20:00 +0900
 ---
 
 * Will be replaced with the ToC
@@ -113,21 +113,21 @@ font 네임스페이스를 가진 속성을 중첩하여 작성했습니다.
 ***
 
 #### 특수 선택자
-Sass는 CSS 선택자의 모든 형태 외에 두 가지 특수 선택자를 제공합니다. 중첩 규칙에서 사용하는 '부모 선택자'와 `@extend` 전용 선택자인 '플레이스홀더 선택자'입니다.
+Sass는 CSS 선택자의 모든 형태 외에 두 가지 특수 선택자를 제공합니다. 중첩 규칙에서 사용하는 '부모 참조 선택자'와 `@extend` 전용 선택자인 '플레이스홀더 선택자'입니다.
 
 ***
 
-##### 부모 선택자 `&`
-중첩 규칙에서 부모 선택자 *parent selector*{:.side-by-side}를 참조할 수 있습니다.
+##### 부모 참조 선택자 `&`
+중첩 규칙에서 `&`를 사용하여 부모 선택자를 참조할 수 있습니다.
 
-(1)부모 선택자와 다른 선택자를 **결합하여** 사용합니다.[^parent]
+(1)부모 참조 선택자와 다른 선택자를 **결합하여** 사용합니다.[^parent]
  
 - 가상 클래스 `&:active`, `&:empty`, `&:first-child` 등
 - 가상 요소 `&::after`, `&::selection`, `&::first-letter` 등
 - 아이디, 클래스, 속성 선택자  `&#movie`, `&.active`, `&[type=radio]` 등
 - 접미사[^suffix] `&-sidebar`, `&--default:hover` 등
 
-(2)부모 선택자를 **하위 선택자로** 위치시킬 수 있습니다.
+(2)부모 참조 선택자를 **하위 선택자로** 위치시킬 수 있습니다.
 
 - `.wf-loading &`, `[lang:ko] &`, `.page section &` 등
 
@@ -135,7 +135,7 @@ Sass는 CSS 선택자의 모든 형태 외에 두 가지 특수 선택자를 제
 
 - `.wf-loading &:before`, `[lang:ko] &#movie`, `.page section &:first-child` 등
 
-중첩 규칙안에서 부모 선택자를 활용합니다.
+중첩 규칙안에서 부모 참조 선택자를 활용합니다.
 {: .code-label .code-label-scss}
 ~~~ scss
 #main {
@@ -149,7 +149,7 @@ Sass는 CSS 선택자의 모든 형태 외에 두 가지 특수 선택자를 제
 }
 ~~~
 
-부모 선택자를 상위 중첩 규칙의 선택자로 변경하여 출력합니다.
+부모 참조 선택자를 상위 중첩 규칙의 부모 선택자로 변경하여 출력합니다.
 {: .code-label .code-label-css}
 ~~~ css
 #main {
@@ -163,7 +163,7 @@ Sass는 CSS 선택자의 모든 형태 외에 두 가지 특수 선택자를 제
       font-weight: normal; }
 ~~~
 
-부모 선택자 `&`는 이전까지 **중첩된 모든 상위 선택자**를 나타냅니다.
+부모 참조 선택자 `&`는 이전까지 **중첩된 모든 상위 부모 선택자**를 나타냅니다.
 
 ***
 
@@ -191,5 +191,5 @@ Sass는 '플레이스홀더 선택자 *placeholder selector*{:.side-by-side}&rsq
 
 
 [^namespace]: `font` 속성 안에 네임스페이스에서 벗어난 `padding` 같은 속성을 중첩하여 작성하면, 컴파일 오류는 나지 않지만 `font-padding`이라는 의미 없는 속성을 얻게 됩니다.
-[^parent]: 부모 선택자 `&`가 다른 선택자와 결합할 경우 항상 단어 맨 앞에 와야 합니다. `p.active&`와 같이 단어 끝이나 중간에 위치하면 컴파일 에러가 발생합니다.
+[^parent]: 부모 참조 선택자 `&`가 다른 선택자와 결합할 경우 항상 단어 맨 앞에 와야 합니다. `p.active&`와 같이 단어 끝이나 중간에 위치하면 컴파일 에러가 발생합니다.
 [^suffix]: 부모 선택자가 `*`처럼 접미사를 가질 수 없는 선택자일 경우 컴파일 오류가 발생합니다.
