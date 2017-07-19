@@ -29,6 +29,7 @@ excerpt:    말그대로 기술이 범람하고 있는 것 같습니다. 좀 늦
       <a class="post-link" href="{{ post.url | relative_url }}">
         {{ post.title | escape }}
       </a>
+      {% if post.subtitle %} &mdash; {{ post.subtitle | escape }}{% endif %}
     </li>
     {% endif %}
     {% endfor %}
