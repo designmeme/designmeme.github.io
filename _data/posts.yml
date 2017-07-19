@@ -9,8 +9,9 @@ subjects:
       - sass-awesome-docs
       - make-awesome-stylesheets-with-sass
       - write-sass-with-scss
+      - sass-css-output-style
       - sass-comments
       - sass-css-extensions
       - sass-sassscript
-      - sass-css-output-style
+      - sass-interactive-shell
     image: /assets/image/post/sass-docs.png

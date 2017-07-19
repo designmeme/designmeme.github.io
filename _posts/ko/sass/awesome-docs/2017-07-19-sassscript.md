@@ -7,7 +7,7 @@ excerpt:  변수, 연산, 함수는 SassScript를 대표하는 기능입니다.
 tags:     [sass, scss, css, preprocessor, 전처리기, 보간, 스크립트, parent selector, parent script, 부모 참조 선택자]
 image:    
 date:             2017-07-19 13:36:00 +0900
-last_modified_at: 
+last_modified_at: 2017-07-19 15:25:00 +0900
 ---
 
 * Will be replaced with the ToC
@@ -36,7 +36,7 @@ SassScript를 사용하는 활용 범위를 크게 두 가지로 나누어 정�
 - `if()`, `@if`, `@while`의 조건식의 값
 - `@each`의 대상
 - `@for`의 범위
-- `@debug` 지시자의 값
+- `@debug`의 값
 
 ***
 
@@ -47,15 +47,15 @@ SassScript를 사용하는 활용 범위를 크게 두 가지로 나누어 정�
 - 선택자
 - 속성 이름
 - 미디어 쿼리에서 미디어 타입
-- `@warn`과 `@error` 지시자의 메시지 안에서
-- 여러 줄 주석 내용 안에서
+- `@warn`과 `@error`의 메시지 안에서
+- 여러 줄 주석 내용 안에서 &mdash; [보러가기](/ko/blog/sass-comments/#주석에-변수-끼워-넣기)
 
 ***
 
-#### SassScript 기능 목록
-SassScript는 다양한 문법을 가지고 있고, 설명할 내용도 많습니다. 각 부문을 아래 목록으로 나누어서 작성하였습니다.
+#### SassScript 목차
+SassScript는 다양한 기능과 문법을 가지고 있고, 설명할 내용과 예시도 많습니다. 각 부문을 아래와 같이 나누어 작성하였습니다.
 
-- 대화형 셸
+- [대화형 셸](/ko/blog/sass-interactive-shell/)
 - 변수 `$`
 - 데이터형
 - 연산
@@ -65,7 +65,7 @@ SassScript는 다양한 문법을 가지고 있고, 설명할 내용도 많습�
 - 부모 스크립트 `&`
 
 
-[^feature]: 미디어 쿼리에서 미디어 속성은 괄호 안에서 조건식처럼 쓰이기 때문에, '이름'이라고 부르지만 '조건식의 값'으로 봐야 합니다.
+[^feature]: 미디어 쿼리에서 괄호 안에 작성하는 미디어 속성 이름과 값은 조건식처럼 쓰이기 때문에, 미디어 속성 이름을 '이름'이라고 부르지만 '조건식의 값'으로 봐야 합니다.
 
 
 
