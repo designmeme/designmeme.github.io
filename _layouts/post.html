@@ -49,11 +49,20 @@ layout: default
   </div>
 
   <footer class="page-footer">
+
     <div class="sns-links">
       {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
       <a href="https://www.facebook.com/sharer/sharer.php?u={{ canonical }}" class="sns-link facebook" target="_blank" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
       <a href="https://twitter.com/home?status={{ canonical }}" class="sns-link twitter" target="_blank" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
     </div>
+
+    <p class="cc-info">
+      <img width="20" src="{{ 'assets/image/common/cc.svg' | relative_url }}" alt="CC">
+      <img width="20" src="{{ 'assets/image/common/by.svg' | relative_url }}" alt="BY">
+      <img width="20" src="{{ 'assets/image/common/nd.svg' | relative_url }}" alt="ND">
+      <br>
+      {{ site.data.translations[page.lang].cc }}
+    </p>
 
     <div class="post-nav">
     {% assign names = site.data.posts.subjects[page.subject].names %}

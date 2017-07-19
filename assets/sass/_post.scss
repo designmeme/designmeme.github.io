@@ -22,6 +22,16 @@
   @include aside;
 }
 
+// post cc info
+//
+.cc-info {
+  margin: $section-margin 0;
+  padding: $section-margin/4;
+  background-color: $gray-n0;
+  @extend .clearfix;
+  @extend .p-smaller;
+}
+
 // post sns links
 //
 $sns-link-width: 3.3rem;
