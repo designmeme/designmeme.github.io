@@ -109,8 +109,10 @@
           &:lang(#{$lang}) {
             background-image: url('../image/common/icon-#{$lang}-active.svg');
           }
-          &:hover {
-            background-image: url('../image/common/icon-#{$lang}-hover.svg');
+          @media (pointer: fine) {
+            &:hover {
+              background-image: url('../image/common/icon-#{$lang}-hover.svg');
+            }
           }
         }
       }

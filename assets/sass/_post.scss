@@ -52,11 +52,13 @@ $sns-link-width: 3.3rem;
     &:not(:first-child) {
       margin-left: 1em;
     }
-    &.facebook:hover {
-      background-color: $facebook-color;
-    }
-    &.twitter:hover {
-      background-color: $twitter-color;
+    @media (pointer: fine) {
+      &.facebook:hover {
+        background-color: $facebook-color;
+      }
+      &.twitter:hover {
+        background-color: $twitter-color;
+      }
     }
   }
 }

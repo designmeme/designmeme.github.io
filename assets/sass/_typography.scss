@@ -127,9 +127,11 @@ a {
   &.visited {
     color: $link-color-visited;
   }
-  &:hover {
-    color: $link-color-hover;
-    text-decoration: none;
+  @media (pointer: fine) {
+    &:hover {
+      color: $link-color-hover;
+      text-decoration: none;
+    }
   }
 }
 
