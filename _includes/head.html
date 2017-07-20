@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% capture title %}{% if page.title %}{{ page.title | escape }}{% if page.subtitle %} — {{ page.subtitle | escape }}{% endif %} | {% endif %}{{ site.title[page.lang] | escape }}{% endcapture %}
+  {% capture title %}{% if page.title %}{{ page.title | escape }}{% if page.subtitle %} — {{ page.subtitle | escape }}{% endif %} | {% endif %}{% if page.subject %}{{ site.data.posts.subjects[page.subject].title[page.lang] }} | {% endif %}{{ site.title[page.lang] | escape }}{% endcapture %}
   {% capture description %}{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endcapture %}
   {% capture image %}{{ page.image | default: site.data.posts.subjects[page.subject].image | default: site.image | absolute_url }}{% endcapture %}
   <title>{{ title }}</title>
