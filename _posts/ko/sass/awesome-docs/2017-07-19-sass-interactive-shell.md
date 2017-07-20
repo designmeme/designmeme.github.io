@@ -3,8 +3,8 @@ subject:  sass-awesome-docs
 name:     sass-interactive-shell
 title:    대화형 셸
 subtitle: SassScript 간편 실험실
-excerpt:  SassScript 표현식을 스타일시트에서 작성하기 전에 대화형 셸을 이용하여 헷갈리는 데이터형이나, 애매하고 복잡한 변수, 함수 연산의 결과를 미리 확인하면 표현식의 결과를 명확히 할 수 있습니다.
-tags:     [sass, scss, css, preprocessor, 전처리기, CLI, terminal, prompt, 테스트]
+excerpt:  SassScript 표현식을 스타일시트에서 작성하기 전에 대화형 셸을 이용하여 헷갈리는 데이터 유형이나, 애매하고 복잡한 변수, 함수 연산의 결과를 미리 확인하면 표현식의 결과를 명확히 할 수 있습니다.
+tags:     [sass, scss, css, preprocessor, 전처리기, 스크립트, script, CLI, terminal, prompt, 테스트, 자료형, data type]
 image:    
 date:             2017-07-19 17:56:00 +0900
 last_modified_at: 
@@ -17,7 +17,7 @@ last_modified_at:
 [원문](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#Interactive_Shell){:.original-link target="_blank"}
 {: .lead}
 
-SassScript 표현식을 스타일시트에서 작성하기 전에 대화형 셸을 이용하여 **헷갈리는 데이터형**이나, **애매하고 복잡한 변수, 함수 연산의 결과**를 미리 확인하면 표현식의 결과를 명확히 할 수 있습니다.
+SassScript 표현식을 스타일시트에서 작성하기 전에 대화형 셸을 이용하여 **헷갈리는 데이터 유형**이나, **애매하고 복잡한 변수, 함수 연산의 결과**를 미리 확인하면 표현식의 결과를 명확히 할 수 있습니다.
 또한, Sass 파일을 생성하지 않고 SassScript 표현식을 직접 작성하고 결과를 바로 얻을 수 있으므로 문법을 배우는 단계에서 **실습**하기에 좋습니다.
 
 ***

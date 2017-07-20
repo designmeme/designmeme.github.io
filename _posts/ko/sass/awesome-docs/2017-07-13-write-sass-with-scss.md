@@ -14,7 +14,7 @@ last_modified_at: 2017-07-14 11:06:00 +0900
 {:toc}
 
 (**SCSS 문법으로 작성한**) Sass는 모든 CSS 버전과 완전히 호환됩니다. Sass의 큰 장점 중 하나인 CSS 완전 호환성은 SCSS 문법 사용을 전제로 누릴 수 있습니다.
-[원문](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax){:.original-link target="_blank"}
+[원문](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#Syntax){:.original-link target="_blank"}
 {: .lead}
 
 Sass를 작성하는 문법은 두 가지입니다. 처음 Sass가 만들어질 때 함께 탄생한 Sass 문법과 대대적인 문법 개선으로 새로 추가된 SCSS 문법이 있습니다.

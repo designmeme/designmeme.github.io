@@ -1,36 +1,11 @@
+변수, 함수 : 함수 안에 작성한 변수가 지역변수? 전역변수? 선택자 중첩외에 어떤 영역이 범위를 가르는지 시험필요..
 
-### SassScript - 대화형 셸 (Interactive Shell)
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#interactive_shell
-대화형 셸을 이용하면 SassScript를 쉽게 시험해볼 수 있다.
-셸을 시작하려면 sass 커맨드라인을 `-i` 옵션과 함께 실행한다.
-실행 후 SassScript 표현을 작성해 넣으면, 계산된 결과를 출력한다.
-* 문서에 작성하기 전에 값을 확인하고 싶거나, 문법을 확인하기위해 사용하면 좋다.
-
-*** 
-
-### 변수 $
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#variables_
-SassScript를 사용하는 가장 직접적인 방법은 변수를 사용하는 것이다.
-변수는 $ 달러 기호로 시작하며, CSS 속성 구문과 비슷하다.
-$width: 5em;
-변수는 아래와 같이 사용할 수 있다.
-예시.
-
-글로벌 변수는 어디서든 사용할 수 있다.
-변수가 선택자 안에 정의되었다면 그 범위 아에서만 사용할 수 있다. 지역 변수와 같다.
-그렇더라도 `!global` 플래그를 작성하면 글로벌 변수처럼 어디서든 사용할 수 있다.
-
-역사적 이유로(어떤 이유일까.. 궁금), 변수와 모든 Sass 식별자의 이름의 하이픈과 언더스코어는 교차사용이 가능하다. *믹스인, 변수에서도 나옴
-$main-width라고 정의된 변수는 $main_width로도 사용할 수 있으며, 그 반대도 가능하다.
 
 ### 변수 기본값 !default
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#variable_defaults_
 !default 플래그를 변수 값 끝에 추가하면, 변수에 값이 할당되지 않았을 경우에만 값을 할당한다.
 즉 변수에 값이 있다면 다시 값을 항당하지 않고, 기존 값이 없을 경우에만 값을 할당 한다.
 
 변수 값이 Null일 경우에는 값이 할당 되지 않은 것처럼 취급한다.
-
-***
 
 ### 데이터형(Data types)
 http://sass-lang.com/documentation/file.SASS_REFERENCE.html#data_types

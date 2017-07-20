@@ -15,7 +15,7 @@ last_modified_at: 2017-07-17 18:01:00 +0900
 
 Sass의 기본 CSS 출력 스타일인 중첩 스타일은 문서의 구조를 잘 반영한 매우 뛰어난 양식이지만,
 사용자의 취향과 필요에 맞춰 Sass는 다양한 출력 스타일을 지원합니다.
-[원문](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style){:.original-link target="_blank"}
+[원문](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#Output_Style){:.original-link target="_blank"}
 {: .lead}
 
 ***
@@ -122,4 +122,4 @@ sass --watch style.scss:style.css --style compressed
 
 [^compact]: 여러 줄로 작성한 주석도 모두 한 줄로 표시합니다.
 [^compressed]: 여러 줄 주석도 모두 삭제합니다. 하지만 주석의 첫 글자로 느낌표 `!`를 써넣으면 삭제하지 않고 출력물에 그대로 표시합니다.
-[^option]: 루비 온 레일즈 *Ruby on Rails*{: .side-by-side} 나 랙 *Rack*{: .side-by-side}등 루비 기반 환경설정 파일에서 [옵션](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#options)을 설정할 수 있습니다.
+[^option]: 루비 온 레일즈 *Ruby on Rails*{: .side-by-side} 나 랙 *Rack*{: .side-by-side}등 루비 기반 환경설정 파일에서 [옵션](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#Options)을 설정할 수 있습니다.

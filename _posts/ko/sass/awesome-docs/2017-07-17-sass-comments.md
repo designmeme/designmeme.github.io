@@ -14,7 +14,7 @@ last_modified_at:
 {:toc}
 
 Sass는 CSS 표준 다중 줄 주석 `/* */`을 지원하며, `//`로 시작하는 한 줄 주석도 함께 지원합니다.
-[원문](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#comments){:.original-link target="_blank"}
+[원문](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#Comments________and_____comments){:.original-link target="_blank"}
 {: .lead}
 
 
