@@ -7,7 +7,7 @@ excerpt:  Sass에서 가장 기본적인 기능으로, 활용 범위가 넓은 �
 tags:     [sass, scss, css, preprocessor, selectors, nesting, 전처리기, 선택자, 중첩]
 image:    
 date:             2017-07-14 17:07:00 +0900
-last_modified_at: 2017-07-19 13:20:00 +0900
+last_modified_at: 2017-07-21 14:54:00 +0900
 ---
 
 * Will be replaced with the ToC
@@ -59,7 +59,7 @@ CSS 규칙을 중첩하여 작성할 수 있습니다.
 ***
 
 ##### 속성 중첩 
-CSS 속성에는 **네임스페이스**로 묶인 속성이 있습니다. 예로 font 네임스페이스는 아래의 속성을 포함합니다.
+CSS 속성에는 **네임스페이스**로 묶인 속성이 있습니다. 예로 font 네임스페이스는 다음의 속성을 포함합니다.
  
 - `font-` 로 시작하는 모든 속성
 - `font-size`, `font-family`, `font-weight`, `font-variant`, `font-style`, `font-cerning` 등 

@@ -7,7 +7,7 @@ excerpt:  문장을 풀어내고, 서로 연결하고, 내용을 덧붙여서 �
 tags:     [sass, scss, css, preprocessor, guide, study, 전처리기, 배우기, 공부, 스터디, 설명]
 image:    
 date:             2017-07-10 18:00:00 +0900
-last_modified_at: 2017-07-18 19:05:00 +0900
+last_modified_at: 2017-07-21 14:54:00 +0900
 ---
 
 * Will be replaced with the ToC
@@ -26,7 +26,7 @@ Sass는 참 멋진 CSS 전처리기이지만 Sass 공식 참고문서는 아주 
 ***
 
 ##### 용어
-Sass 공식 참고문서의 영어 원어를 아래와 같이 한글로 표기합니다. CSS와 자바스크립트에서 사용하는 익숙한 용어도 있고 처음 들어 본 낯선 용어도 있습니다.
+Sass 공식 참고문서의 영어 원어를 다음과 같이 한글로 표기합니다. CSS와 자바스크립트에서 사용하는 익숙한 용어도 있고 처음 들어 본 낯선 용어도 있습니다.
 Sass에서 가지는 의미를 중심으로 설명합니다.
 
 CSS 규칙 *rule*{: .side-by-side}과 규칙 집합 *ruleset*{: .side-by-side}
