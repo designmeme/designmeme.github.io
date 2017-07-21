@@ -1,15 +1,8 @@
 변수, 함수 : 함수 안에 작성한 변수가 지역변수? 전역변수? 선택자 중첩외에 어떤 영역이 범위를 가르는지 시험필요..
 
 
-### 변수 기본값 !default
-!default 플래그를 변수 값 끝에 추가하면, 변수에 값이 할당되지 않았을 경우에만 값을 할당한다.
-즉 변수에 값이 있다면 다시 값을 항당하지 않고, 기존 값이 없을 경우에만 값을 할당 한다.
-
-변수 값이 Null일 경우에는 값이 할당 되지 않은 것처럼 취급한다.
-
-### 데이터형(Data types)
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#data_types
-SassScript는 7개의 주요한 데이터형을 지원한다.
+### 데이터 유형(Data types)
+SassScript는 7개의 주요한 데이터 유형을 지원한다.
 - 숫자
 - 문자열
 - 목록
