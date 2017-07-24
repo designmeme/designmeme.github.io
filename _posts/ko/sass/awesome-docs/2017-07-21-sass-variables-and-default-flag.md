@@ -1,13 +1,13 @@
 ---
 subject:  sass-awesome-docs
 name:     sass-variables-default-flag
-title:    변수와 !default 플래그
+title:    Sass 변수와 !default 플래그
 subtitle: 조건부로 변수 정의하기
 excerpt:  변수를 정의할 때 !default 플래그를 함께 작성하면 조건부로 변수를 정의할 수 있습니다. 변수 사용자화를 제공하는 라이브러리를 작성할 때 많이 사용합니다.
 tags:     [sass, scss, css, preprocessor, 전처리기, 글로벌 변수, 로컬 변수, 스코프, bootstrap, re-assign, sass flag, 커스터마이징]
 image:    
 date:             2017-07-20 17:44:00 +0900
-last_modified_at: 
+last_modified_at: 2017-07-24 22:23:00 +0900
 ---
 
 * Will be replaced with the ToC

@@ -1,20 +1,20 @@
 ---
 subject:  sass-awesome-docs
 name:     sass-css-extensions
-title:    CSS 확장
+title:    Sass CSS 확장 기능
 subtitle: 중첩과 특수 선택자로 CSS 확장하기
 excerpt:  Sass에서 가장 기본적인 기능으로, 활용 범위가 넓은 중첩과 부모 참조 선택자를 설명합니다.
 tags:     [sass, scss, css, preprocessor, selectors, nesting, 전처리기, 선택자, 중첩]
 image:    
 date:             2017-07-14 17:07:00 +0900
-last_modified_at: 2017-07-21 14:54:00 +0900
+last_modified_at: 2017-07-24 22:23:00 +0900
 ---
 
 * Will be replaced with the ToC
 {:toc}
 
-Sass는 CSS 확장 언어입니다. 여기에는 변수, 믹스인, 함수 등 여러 기능이 있지만, 가장 기본은 **CSS 확장** *CSS Extensions*{:.side-by-side}이라 할 수 있습니다.
-CSS 확장은 크게 중첩과 특수 선택자로 나누어 집니다.
+Sass는 CSS 확장 언어입니다. 여기에는 변수, 믹스인, 함수 등 여러 기능이 있지만, 가장 기본은 **CSS 확장 기능** *CSS Extensions*{:.side-by-side}이라 할 수 있습니다.
+CSS 확장 기능은 크게 중첩과 특수 선택자로 나누어 집니다.
 [원문](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#CSS_Extensions){:.original-link target="_blank"}
 {: .lead}
 
