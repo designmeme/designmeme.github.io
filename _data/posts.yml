@@ -14,6 +14,7 @@ subjects:
       - sass-css-extensions
       - sass-sassscript
       - sass-interactive-shell
+      - sass-identifiers
       - sass-variables
       - sass-variables-default-flag
     image: /assets/image/post/sass-docs.png

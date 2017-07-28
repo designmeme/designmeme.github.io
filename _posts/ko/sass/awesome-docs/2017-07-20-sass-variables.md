@@ -7,7 +7,7 @@ excerpt:  직접 값을 입력하는 대신 변수를 사용하면 같은 목적
 tags:     [sass, scss, css, preprocessor, 전처리기, 글로벌 변수, 로컬 변수, 스코프]
 image:    
 date:             2017-07-20 16:42:00 +0900
-last_modified_at: 2017-07-24 22:23:00 +0900
+last_modified_at: 2017-07-28 16:33:00 +0900
 ---
 
 * Will be replaced with the ToC
@@ -54,10 +54,6 @@ $width: 5em;
 
 [SassScript 사용 범위](/ko/blog/sassscript/#sassscript-사용-범위)에서 정리한 것처럼 변수는 이외에도 다양한 용도로 쓰입니다. 이에 대한 예시는 각 부분에서 볼 수 있습니다.
 {:.p-small}
-
-***
-
-{% include post/hyphens-underscores.md %}
 
 ***
 
