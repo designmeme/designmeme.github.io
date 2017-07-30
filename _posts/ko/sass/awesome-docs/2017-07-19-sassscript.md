@@ -7,7 +7,7 @@ excerpt:  변수, 연산, 함수는 SassScript를 대표하는 기능입니다.
 tags:     [sass, scss, css, preprocessor, 전처리기, 보간, 스크립트, script, 자료형, data type, parent selector, parent script, 부모 참조 선택자]
 image:    
 date:             2017-07-19 13:36:00 +0900
-last_modified_at: 2017-07-21 14:54:00 +0900
+last_modified_at: 2017-07-30 22:48:00 +0900
 ---
 
 * Will be replaced with the ToC
@@ -56,7 +56,9 @@ SassScript를 사용하는 활용 범위를 크게 두 가지로 나누어 정�
 SassScript는 다양한 기능과 문법을 가지고 있고, 설명할 내용과 예시도 많습니다. 각 부문을 다음과 같이 나누어 작성하였습니다.
 
 - [대화형 셸](/ko/blog/sass-interactive-shell/)
-- 변수 `$`
+- [식별자 이름](/ko/blog/sass-identifiers/)
+- [변수 `$`](/ko/blog/sass-variables/)
+- [변수와 `!default` 플래그](/ko/blog/sass-variables-and-default-flag/)
 - 데이터 유형
 - 연산
 - 괄호의 활용
