@@ -261,4 +261,10 @@ skills:
   - npm, Gulp
   - Git, GitHub, GibLab
   - Chrome DevTools, Browsersync, VirtualBox
-  - WebStorm
+  - WebStorm, ImageOptim
+
+tools:
+  - Slack, Email
+  - '프로젝트 및 이슈 관리: Google Drive, GitHub, GitLab, Trello, Bitbucket, JIRA, Redmine'
+  - '기획: Oven, AXURE, Balsamiq Mockups, PowerPoint'
+  - '디자인: Zeplin, InVision, Sketch, Photoshop'

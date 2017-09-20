@@ -44,10 +44,8 @@ excerpt:    다양한 형태의 웹사이트와 모바일 웹, 반응형 웹 그
 프로젝트 목표를 제대로 이해하고 기획 및 디자인을 존중하며 여러 직군과 협업합니다.
 소규모부터 대규모까지 다양한 규모의 프로젝트에서 팀원 및 분야 책임자로 일한 경험이 많습니다.
 
-- Email, Slack
-- 프로젝트 및 이슈 관리: GitLab, Bitbucket, JIRA, Trello, Redmine, Google Drive
-- 기획: Oven, AXURE, Balsamiq Mockups, PowerPoint
-- 디자인: Zeplin, InVision, Sketch, Photoshop
+{% for tool in resume.tools %}
+- {{ tool }}{% endfor %}
 
 ***
 
