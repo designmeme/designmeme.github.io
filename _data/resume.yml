@@ -13,6 +13,18 @@ education:
     description:
 
 projects:
+  - title: 이노베이션랩 네이티브애드 웹사이트 및 모바일사이트
+    date: [2017-07, 2017-09]
+    description: >
+      청담러닝, 아모레퍼시픽의 두 개의 프로젝트를 전담하여 작업하였습니다. 윈도우 스크롤에 따른 비디오, DOM 제어와 SVG 및 DOM 애니메이션을 구현하는 것을 핵심으로 하는 프로젝트입니다.<br>
+      JS Template Engine Nunjucks 및 HTML Beautify 사용 / Sass 및 Autoprefixer 사용 / 이미지 최적화 및 레이지 로딩 처리 / 폰트 서브셋 생성
+    client: 중앙일보
+    url:
+      - http://innovationlab.co.kr/project/amorepacific2017/
+      - http://innovationlab.co.kr/project/chungdahm/
+    tags: [mobile, tablet, desktop]
+    featured: true
+
   - title: 김메리 2.0 반응형 웹사이트
     date: [2016-12, 2017-01]
     description: >
@@ -243,7 +255,7 @@ projects:
 
 skills:
   - 웹 표준, 브라우저 호환성, 반응형 웹, 웹 접근성, SEO
-  - HTML5, Jekyll, Liquid
+  - HTML5, Jekyll, Liquid, Nunjucks
   - CSS3, Sass, Bootstrap
   - JavaScript, jQuery
   - npm, Gulp

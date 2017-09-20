@@ -45,9 +45,9 @@
   <dd class="career-description">{{ career.description }}</dd>
   {% endif %}
 
-  {% if career.url %}
-  <dd class="career-url"><a href="{{ career.url }}">{{ career.url }}</a></dd>
-  {% endif %}
+  {% for url in career.url %}
+  <dd class="career-url"><a href="{{ url }}">{{ url }}</a></dd>
+  {% endfor %}
 
 {% endfor %}
 </dl>
