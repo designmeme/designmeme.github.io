@@ -1,6 +1,6 @@
 ---
 title:      이력서 및 경력기술서
-subtitle:   프리랜서 프론트엔드 웹 개발자 이지혜입니다
+subtitle:   프론트엔드 웹 개발자 이지혜입니다
 name:       resume
 permalink:  /ko/about/resume/
 excerpt:    다양한 형태의 웹사이트와 모바일 웹, 반응형 웹 그리고 웹 접근성 프로젝트까지 풍부한 개발 경험을 가지고 있습니다.
@@ -8,27 +8,16 @@ excerpt:    다양한 형태의 웹사이트와 모바일 웹, 반응형 웹 그
 
 {% assign resume = site.data.resume %}
 
+##### 프로필
+{% include profile-list.html %}
+
+***
+
 ##### 경력
 {% include career-list.html careers=resume.career %}
 
 ##### 학력
 {% include career-list.html careers=resume.education %}
-
-***
-
-### 경력 기술서
-웹 표준에 맞춰 의미 있는 구조를 가지며, 다양한 환경에 반응하도록 디자인과 UX를 구현하고, 
-(검색엔진을 포함하여) 모두가 접근 가능한 웹사이트를 만들기 위해 노력하고 있습니다.
-
-***
-
-##### 프로젝트
-다양한 형태의 웹사이트와 모바일 웹, 반응형 웹 그리고 웹 접근성 프로젝트까지 풍부한 개발 경험을 가지고 있습니다. [^project]
-{: .p-small}
-
-[^project]: 주요 작업은 이름 앞에 <i class="fa fa-star" aria-hidden="true"></i> 표시가 있습니다. 특별한 언급이 없다면 신규 제작 프로젝트이며, 프론트엔드 부문을 전담하였거나 90% 이상 기여한 작업입니다.
- 
-{% include career-list.html careers=resume.projects %}
 
 ***
 
@@ -46,6 +35,23 @@ excerpt:    다양한 형태의 웹사이트와 모바일 웹, 반응형 웹 그
 
 {% for tool in resume.tools %}
 - {{ tool }}{% endfor %}
+
+***
+{: .print-hr}
+
+### 경력 기술서
+웹 표준에 맞춰 의미 있는 구조를 가지며, 다양한 환경에 반응하도록 디자인과 UX를 구현하고, 
+(검색엔진을 포함하여) 모두가 접근 가능한 웹사이트를 만들기 위해 노력하고 있습니다.
+
+***
+
+##### 프로젝트
+다양한 형태의 웹사이트와 모바일 웹, 반응형 웹 그리고 웹 접근성 프로젝트까지 풍부한 개발 경험을 가지고 있습니다. [^project]
+{: .p-small}
+
+[^project]: 주요 작업은 이름 앞에 <i class="fa fa-star" aria-hidden="true"></i> 표시가 있습니다. 특별한 언급이 없다면 신규 제작 프로젝트이며, 프론트엔드 부문을 전담하였거나 90% 이상 기여한 작업입니다.
+ 
+{% include career-list.html careers=resume.projects %}
 
 ***
 

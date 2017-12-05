@@ -37,3 +37,16 @@
 .career-description {
   @extend .p-small;
 }
+
+// profile list
+.profile-list {
+  overflow: hidden;
+  dt {
+    min-width: 5em;
+    clear: both;
+    float: left;
+  }
+  dt, dd {
+    margin-bottom: 1.5em;
+  }
+}
