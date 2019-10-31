@@ -1,7 +1,11 @@
 career:
+  - title: 띵스플로우 프론트엔드 웹 개발자
+    date: [2017-12, present]
+    description: 하우투메리에서 함께 일한 인연을 이어 현재 띵스플로우에서 프론트엔드 웹 개발을 담당하고 있습니다.
+    
   - title: 프리랜서 프론트엔드 웹 개발자
-    date: [2011-08, present]
-    description: 2011년, 직군이 생소하던 그때부터 프리랜서로서 시작하여 현재까지 일하고 있습니다.
+    date: [2011-08, 2017-09]
+    description: 2011년, 프리랜서로서 시작하여 띵스플로우 입사 전까지 프리랜서로 일했습니다.
 
   - title: 디자인하우스 월간디자인 편집부 기자 인턴
     date: [2010-04, 2010-09]
@@ -256,16 +260,16 @@ projects:
 
 skills:
   - 웹 표준, 브라우저 호환성, 반응형 웹, 웹 접근성, SEO
+  - Angular, TypeScript, RxJS
   - HTML5, Jekyll, Liquid, Nunjucks
-  - CSS3, Sass, Bootstrap
-  - JavaScript, jQuery
-  - npm, Gulp
-  - Git, GitHub, GibLab
-  - Chrome DevTools, Browsersync, VirtualBox
-  - WebStorm, ImageOptim
+  - CSS3, Sass
+  - JavaScript(ES6), jQuery
+  - Bootstrap, Material
+  - npm, Gulp, Browsersync
+  - Git, Chrome DevTools, VirtualBox, WebStorm
 
 tools:
   - Slack, Email
-  - '프로젝트 및 이슈 관리: Google Drive, GitHub, GitLab, Trello, Bitbucket, JIRA, Redmine'
+  - '프로젝트 및 이슈 관리: Google Drive, GitHub, GitLab, Bitbucket, JIRA, Redmine, Notion, Wrike, Trello'
   - '기획: Oven, AXURE, Balsamiq Mockups, PowerPoint'
-  - '디자인: Zeplin, InVision, Sketch, Photoshop'
+  - '디자인: Zeplin, InVision, Sketch'
