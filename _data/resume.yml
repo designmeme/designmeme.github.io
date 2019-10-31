@@ -25,7 +25,7 @@ projects:
     date: [2017-12, present]
     description: >
       기존 챗봇 제작 어드민 사이트를 리팩토링 하였으며, 이후 새롭게 앵귤러 기반으로 헬로우봇 스튜디오를 만들어 오픈한 이후 계속 기능을 추가하고 개선하고 있습니다.<br>
-      Angualr, RxJS, TypeScript, Sass / PWA(Service Worker)
+      Angular, RxJS, TypeScript, Sass / PWA(Service Worker)
     client: 띵스플로우
     url:
       - https://hellobotstudio.com
@@ -37,7 +37,7 @@ projects:
     description: >
       <b>띵스플로우 반응형 웹사이트</b> - 회사 소개 웹사이트로 ngx-translate 라이브러리를 기반으로 한국어, 일본어를 지원하는 다국어 웹사이트를 구현하였습니다.<br>
       <b>헬로우봇 반응형 웹사이트</b> - 헬로우봇 서비스 소개 웹사이트입니다.<br>
-      Angualr, RxJS, TypeScript, Sass / PWA(Service Worker) / Angualr Universal(SSR, Prerendering 적용) / SEO 최적화
+      Angular, RxJS, TypeScript, Sass / PWA(Service Worker) / Angular Universal(Prerendering 적용) / SEO 최적화
     client: 띵스플로우
     url:
       - https://thingsflow.com/
