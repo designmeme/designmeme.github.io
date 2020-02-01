@@ -2,6 +2,8 @@
 title:    UI Design Guide
 subtitle: 기본 요소별 디자인 가이드
 name:     design-guide
+date:             2017-07-07 13:00:00 +0900
+last_modified_at: 2017-07-18 20:27:00 +0900
 ---
 
 * Will be replaced with the ToC
