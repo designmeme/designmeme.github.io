@@ -13,6 +13,11 @@
           {{ content }}
         </div>
       </div>
+      {% if site.use_kakao_adfit == 'true' %}
+        <aside class="site-aside">
+          {% include kakao-adfit.html %}
+        </aside>
+      {% endif %}
     </main>
 
     {% include footer.html %}

@@ -21,13 +21,14 @@ body {
 }
 
 .site-main {
+  position: relative;
   flex: 1 1 auto;
   padding-bottom: 5rem;
   @include media-breakpoint-up(lg) {
     padding-bottom: 10rem;
   }
   .inner-wrapper {
-    max-width: 650px;
+    max-width: $main-max-width;
     @include media-breakpoint-up(md) {
       margin-right: $min-aside-outer-width;
     }
@@ -37,5 +38,23 @@ body {
     @include media-breakpoint-up(xl) {
       margin-left: $max-aside-outer-width;
     }
+  }
+}
+
+.site-aside {
+  display: none;
+
+  @include media-breakpoint-up(xxl) {
+    display: block;
+    position: absolute;
+    //width: $kakao-aside-width;
+    //height: $kakao-aside-height;
+    //border: 1px solid gray;
+    top: 0;
+    right: 0;
+  }
+
+  @include media-breakpoint-up(xxxl) {
+    right: $max-margin;
   }
 }
