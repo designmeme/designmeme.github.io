@@ -61,3 +61,11 @@ function stickySubNav() {
 
 $(window).on('load resize orientationchange', liftFootnotes);
 $(window).on('load resize orientationchange scroll', stickySubNav);
+
+function gaEvent(category, action, label) {
+  if (!window.ga) {
+    return;
+  }
+
+  ga('send', 'event', category, action, label);
+}

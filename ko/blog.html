@@ -7,7 +7,7 @@ redirect_from:
   - /ko/
   - /
 date:             2017-07-07 13:00:00 +0900
-last_modified_at: 2020-02-01 13:35:00 +0900
+last_modified_at: 2020-02-04 00:00:00 +0900
 ---
 
 <p>
@@ -32,7 +32,7 @@ last_modified_at: 2020-02-01 13:35:00 +0900
     {% assign post = post[0] %}
     {% if post.title %}
     <li>
-      <a class="post-link" href="{{ post.url | relative_url }}">
+      <a class="post-link" href="{{ post.url | relative_url }}" onclick="gaEvent('post-link-in-blog', 'click', post.title)">
         {{ post.title | escape }}
       </a>
       {% if post.subtitle %} &mdash; {{ post.subtitle | escape }}{% endif %}
