@@ -16,7 +16,7 @@ statcounter:
   project:        11398249
   security:       3b7ccf52
 facebook_app_id:  127116027879734
-use_kakao_adfit:  true
+use_kakao_adfit:  false # 심사 통과시 true로 변경필요
 github_username:  designmeme
 copyright:        © Jihye Lee
 
