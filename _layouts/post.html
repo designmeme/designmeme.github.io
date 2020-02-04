@@ -53,10 +53,10 @@ layout: default
   <footer class="page-footer">
     <div class="sns-links">
       {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
-      <a href="https://www.facebook.com/sharer/sharer.php?u={{ canonical }}" class="sns-link facebook" target="_blank" aria-label="facebook" onclick="gaEvent('sns-link-fb', 'click', canonical)">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ canonical }}" class="sns-link facebook" target="_blank" aria-label="facebook" onclick="gaEvent('sns-link-fb', 'click', '{{canonical}}')">
         <i class="fa fa-facebook" aria-hidden="true"></i>
       </a>
-      <a href="https://twitter.com/home?status={{ canonical }}" class="sns-link twitter" target="_blank" aria-label="twitter"  onclick="gaEvent('sns-link-tw', 'click', canonical)">
+      <a href="https://twitter.com/home?status={{ canonical }}" class="sns-link twitter" target="_blank" aria-label="twitter"  onclick="gaEvent('sns-link-tw', 'click', '{{canonical}}')">
         <i class="fa fa-twitter" aria-hidden="true"></i>
       </a>
     </div>
@@ -84,7 +84,7 @@ layout: default
       {% assign rel_post = posts | where: "name", names[rel_index] %}
       {% assign rel_post = rel_post[0] %}
       {% if rel_post and rel_index < names.size %}
-        <a href="{{ rel_post.url | reletive_url }}" class="post-next-link" onclick="gaEvent('post-next-link', 'click', rel_post.title)">{{ rel_post.title }}<span class="icon"><i class="fa fa-eye" aria-hidden="true"></i><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
+        <a href="{{ rel_post.url | reletive_url }}" class="post-next-link" onclick="gaEvent('post-next-link', 'click', '{{rel_post.title}}')">{{ rel_post.title }}<span class="icon"><i class="fa fa-eye" aria-hidden="true"></i><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
         {% break %}
       {% endif %}
     {% endfor %}
@@ -94,7 +94,7 @@ layout: default
       {% assign rel_post = posts | where: "name", names[rel_index] %}
       {% assign rel_post = rel_post[0] %}
       {% if rel_post and rel_index >= 0 %}
-        <a href="{{ rel_post.url | reletive_url }}" class="post-prev-link" onclick="gaEvent('post-prev-link', 'click', rel_post.title)"><span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i><i class="fa fa-eye" aria-hidden="true"></i></span>{{ rel_post.title }}</a>
+        <a href="{{ rel_post.url | reletive_url }}" class="post-prev-link" onclick="gaEvent('post-prev-link', 'click', '{{rel_post.title}}')"><span class="icon"><i class="fa fa-long-arrow-left" aria-hidden="true"></i><i class="fa fa-eye" aria-hidden="true"></i></span>{{ rel_post.title }}</a>
         {% break %}
       {% endif %}
     {% endfor %}
@@ -114,7 +114,7 @@ layout: default
         {% assign post = post[0] %}
         {% if post.title %}
         <li {% if post.title == page.title %}class="active"{% endif %}>
-          <a class="sub-link" href="{{ post.url | relative_url }}" onclick="gaEvent('post-nav-link', 'click', post.title)">
+          <a class="sub-link" href="{{ post.url | relative_url }}" onclick="gaEvent('post-nav-link', 'click', '{{post.title}}')">
             {{ post.title | escape }}
           </a>
         </li>
