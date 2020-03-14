@@ -5,7 +5,7 @@ title:    친절한 Sass 설명서
 subtitle: 모두를 위한 꼼꼼한 가이드북
 excerpt:  문장을 풀어내고, 서로 연결하고, 내용을 덧붙여서 꼼꼼하고 친절하게 설명합니다. 
 tags:     [sass, scss, css, preprocessor, guide, study, 전처리기, 배우기, 공부, 스터디, 설명]
-image:    
+# image:    
 date:             2017-07-10 18:00:00 +0900
 last_modified_at: 2017-07-21 14:54:00 +0900
 ---

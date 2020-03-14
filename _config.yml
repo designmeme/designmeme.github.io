@@ -2,20 +2,21 @@
 baseurl:          ""
 url:              https://designmeme.github.io
 
-title:
-  ko:             이지혜, 프론트엔드 웹 개발자
-  en:             Jihye Lee, Front-end Web Developer
+title:            이지혜, 프론트엔드 웹 개발자
 description:      Freelance Front-end Web Developer
 author:           이지혜 Jihye Lee
 email:            ghe.lee19@gmail.com
-
+lang:             ko
 image:            /assets/image/common/feature.png # og_image, fb 고해상도 1200x630px, 8MB 이하
+
+#google_site_verification: google2bfa19f4f3a8a8ee
 google_adsense:   ca-pub-3088246349891349
 google_analytics: UA-93339811-1
 statcounter:
   project:        11398249
   security:       3b7ccf52
-facebook_app_id:  127116027879734
+facebook:
+  app_id: 127116027879734
 use_kakao_adfit:  false # 심사 통과시 true로 변경필요
 github_username:  designmeme
 copyright:        © Jihye Lee

@@ -3,50 +3,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% capture title %}{% if page.title %}{{ page.title | escape }}{% if page.subtitle %} — {{ page.subtitle | escape }}{% endif %} | {% endif %}{% if page.subject %}{{ site.data.posts.subjects[page.subject].title[page.lang] }} | {% endif %}{{ site.title[page.lang] | escape }}{% endcapture %}
+  {% capture title %}{% if page.title %}{{ page.title | escape }}{% if page.subtitle %} — {{ page.subtitle | escape }}{% endif %} | {% endif %}{% if page.subject %}{{ site.data.posts.subjects[page.subject].title[page.lang] }} | {% endif %}{{ site.title | escape }}{% endcapture %}
   {% capture description %}{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endcapture %}
   {% capture image %}{{ page.image | default: site.data.posts.subjects[page.subject].image | default: site.image | absolute_url }}{% endcapture %}
   <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-  <meta name="author" content="{{ site.author }}">
-
-  <meta property="og:url"         content="{{ page.url | absolute_url }}">
-  <meta property="og:type"        content="{% if page.type == "posts" %}article{% else %}website{% endif %}">
-  <meta property="og:site_name"   content="{{ site.title[page.lang] | escape }}">
-  <meta property="og:title"       content="{{ title }}">
-  <meta property="og:description" content="{{ description }}">
   <meta property="og:image"       content="{{ image }}">
-  <meta property="og:locale"      content="{{ site.data.languages[page.lang].locale }}">
-  <meta name="twitter:card"       content="summary_large_image">
-  <meta property="fb:app_id"      content="{{ site.facebook_app_id }}">
-  <script type="application/ld+json">
-    {
-    "@context": "http://schema.org",
-    "@type": "WebPage",
-    "headline": "{{ title }}",
-    "description": "{{ description }}",
-    "url": ""{{ page.url | absolute_url }}"
-    "image": "{{ image }}",
-    "publisher": {
-      "@type": "Organization",
-      "logo": {"@type": "ImageObject", "url": ""}
-      },
-    }
-  </script>
-
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  {% if page.type == "pages" %}
-    {% assign type = "pages" %}
-  {% else %}
-    {% assign type = "posts" %}
-  {% endif %}
-  {% assign group = site[type] | where:"name", page.name | sort: 'lang' %}
-  {% for item in group %}
-    {% unless item.lang == page.lang %}
-    <meta property="og:locale:alternate" content="{{ site.data.languages[item.lang].locale }}">
-    <link rel="alternate" hreflang="{{ item.lang }}" href="{{ item.url | absolute_url }}">
-    {% endunless %}
-  {% endfor %}
+  {% seo title=false %}
 
   <script src="https://use.fontawesome.com/cf596165bf.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spoqa-han-sans/2.1.0/css/SpoqaHanSans-kr.min.css">

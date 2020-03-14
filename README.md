@@ -16,6 +16,10 @@ It is a multilingual website in Korean and English.
 ## About
 Hi, I'm Jihye Lee. I'm a freelance front-end web developer in Seoul, South Korea.
 
+## Local Development
+- 개발환경설정: https://jekyllrb.com/docs/#instructions
+- 로컬 서버 실행 `bundle exec jekyll serve`
+
 ## License
 Copyright © 2017 Jihye Lee  
 Some Rights Reserved.  
