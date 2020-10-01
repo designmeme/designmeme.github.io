@@ -1,7 +1,7 @@
 career:
   - title: 띵스플로우 프론트엔드 웹 개발자
     date: [2017-12, present]
-    description: 하우투메리에서 함께 일한 인연을 이어 현재 띵스플로우에서 프론트엔드 웹 개발을 담당하고 있습니다.
+    description: 하우투메리에서 함께 일한 인연을 이어 현재 띵스플로우에서 챗봇 빌더 및 챗봇 대화 서비스의 프론트엔드 웹 개발을 담당하고 있습니다.
     
   - title: 하우투메리 프론트엔드 웹 개발자
     date: [2014-08, 2017-01]
@@ -21,11 +21,24 @@ education:
     description:
 
 projects:
+  - title: 헬로우봇 스킬스토어 - 챗봇 대화 웹서비스
+    date: [2020-03, present]
+    description: >
+      기존 헬로우봇앱 서비스의 웹 전용 서비스로, 채팅방 등 채팅 인터페이스와 스킬 소비를 위한 다양한 기능을 제공합니다. 일본 서비스를 위해 다국어로 구조를 변경하는 등 지속적으로 기능을 추가하고 있습니다.
+      <br>
+      Angular5-9, RxJS, TypeScript, Sass / Angular Universal(SSR), Serverless(AWS) / SEO, 다국어
+    client: 띵스플로우
+    url:
+      - https://hellobotskillstore.com
+    tags: [mobile, tablet, desktop]
+    featured: true
+
   - title: 헬로우봇 스튜디오 - 챗봇 제작 및 관리용 웹사이트
     date: [2017-12, present]
     description: >
-      기존 챗봇 제작 어드민 사이트를 리팩토링 하였으며, 이후 새롭게 앵귤러 기반으로 헬로우봇 스튜디오를 만들어 오픈한 이후 계속 기능을 추가하고 개선하고 있습니다.<br>
-      Angular, RxJS, TypeScript, Sass / PWA(Service Worker)
+      챗봇 생성하고 관리하며, 다양한 유형의 메세지를 작성하고 대화 흐름을 구성할 수 있는 UI를 구현하였습니다.
+      <br>
+      Angular7-9, RxJS, TypeScript, Sass / PWA(Service Worker)
     client: 띵스플로우
     url:
       - https://hellobotstudio.com
@@ -37,10 +50,11 @@ projects:
     description: >
       <b>띵스플로우 반응형 웹사이트</b> - 회사 소개 웹사이트로 ngx-translate 라이브러리를 기반으로 한국어, 일본어를 지원하는 다국어 웹사이트를 구현하였습니다.<br>
       <b>헬로우봇 반응형 웹사이트</b> - 헬로우봇 서비스 소개 웹사이트입니다.<br>
-      Angular, RxJS, TypeScript, Sass / PWA(Service Worker) / Angular Universal(Prerendering 적용) / SEO 최적화
+      Angular, RxJS, TypeScript, Sass / PWA(Service Worker) / Angular Universal(Prerendering 적용) / SEO
     client: 띵스플로우
     url:
-      - https://thingsflow.com/
+      - https://thingsflow.com
+      - http://hellobot.co
     tags: [mobile, tablet, desktop]
     featured: true
     
@@ -60,11 +74,10 @@ projects:
     date: [2016-12, 2017-01]
     description: >
       웨딩 스드메 견적 비교 사이트로 오픈 이후에 개선 작업도 몇 주간 진행하였습니다.<br>
-      사용자 및 판매자 웹사이트 / 모바일 우선 반응형 / Sass 사용 / typeahead.js를 활용한 업체 검색 UI / 이미지 레이지 로딩 처리 / 사진 슬라이더 적용 / SEO 최적화
+      사용자 및 판매자 웹사이트 / 모바일 우선 반응형 / Sass 사용 / typeahead.js를 활용한 업체 검색 UI / 이미지 레이지 로딩 처리 / 사진 슬라이더 적용 / SEO
     client: 김메리
-    url: http://www.kimmarry.com
     tags: [mobile, tablet, desktop]
-    featured: true
+    featured: false
 
   - title: 웨딩마루, 스튜디온, 웨딩북 - 웨딩 업체를 위한 웹 ERP
     date: [2014-08, 2017-01]
@@ -75,7 +88,10 @@ projects:
       <b>웨딩북 비즈</b> - 웨딩 업체의 예약 및 계약 관리 반응형 웹사이트<br>
       <b>웨딩북</b> - 사용자를 위한 웨딩 업체 소개 반응형 웹사이트
     client: 하우투메리
-    url: http://www.wdgbook.com
+    url:
+      - http://studion.co.kr
+      - https://biz.wdgbook.com
+      - http://www.wdgbook.com
     tags: [mobile, tablet, desktop]
     featured: true
 
@@ -84,9 +100,8 @@ projects:
     description: >
       투자 목록 그리드, 이미지 슬라이더, 투자 상태 상태막대, 팝업 레이아웃 UI 등 / 서식 스타일과 게시판 페이지 등 / 반응형 이메일 페이지 / 관리자 사이트 부트스트랩 활용
     client: 이디움펀딩
-    url: https://www.ediumfunding.com
     tags: [mobile, tablet, desktop]
-    featured: true
+    featured: false
 
   - title: C27 치즈케이크 & 커피 웹사이트
     date: [2015-06, 2015-07]
@@ -101,7 +116,7 @@ projects:
     description: >
       상세 페이지 내용은 웹/모바일에서 동일하게 사용하고(반응형), 레이아웃만 웹/모바일에 따라 다르도록 HTML 및 CSS 작업을 진행하였습니다.
     client: 아이야
-    url: http://www.isungho.co.kr
+    url: http://www.isungho.com
     tags: [mobile, tablet, desktop]
     featured: true
 
@@ -118,9 +133,8 @@ projects:
     description: >
       Less 사용 / 테마별 색상 CSS / 각종 컴포넌트 디자인 가이드 맞춰 작업 진행
     client: 코자인
-    url: http://www.howmuchvideo.com
     tags: [mobile, tablet, desktop]
-    featured: true
+    featured: false
 
   - title: LG Careers 웹 접근성 검수 및 개편
     date: [2014-06, 2014-07]
