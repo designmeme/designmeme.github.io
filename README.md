@@ -21,7 +21,7 @@ Hi, I'm Jihye Lee. I'm a freelance front-end web developer in Seoul, South Korea
 - 로컬 서버 실행 `bundle exec jekyll serve`
 
 ## License
-Copyright © 2017 Jihye Lee  
+Copyright © 2020 Jihye Lee  
 Some Rights Reserved.  
 Code released under [MIT License](./LICENSE).  
 Post contents released under [Creative Commons BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
