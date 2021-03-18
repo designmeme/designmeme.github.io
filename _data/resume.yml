@@ -1,7 +1,11 @@
 career:
+  - title: 프리랜서 프론트엔드 웹 개발자
+    date: [2021-01, present]
+    description: 3년의 띵스플로우 서비스 개발을 마무리하고 다시 프리랜서로 일하고 있습니다.
+
   - title: 띵스플로우 프론트엔드 웹 개발자
-    date: [2017-12, present]
-    description: 하우투메리에서 함께 일한 인연을 이어 현재 띵스플로우에서 챗봇 빌더 및 챗봇 대화 서비스의 프론트엔드 웹 개발을 담당하고 있습니다.
+    date: [2017-12, 2020-12]
+    description: 하우투메리에서 함께 일한 인연을 이어 띵스플로우에서 챗봇 빌더 및 챗봇 대화 서비스의 프론트엔드 웹 개발을 전담했습니다.
     
   - title: 하우투메리 프론트엔드 웹 개발자
     date: [2014-08, 2017-01]
@@ -22,23 +26,23 @@ education:
 
 projects:
   - title: 헬로우봇 스킬스토어 - 챗봇 대화 웹서비스
-    date: [2020-03, present]
+    date: [2020-03, 2020-12]
     description: >
-      기존 헬로우봇앱 서비스의 웹 전용 서비스로, 채팅방 등 채팅 인터페이스와 스킬 소비를 위한 다양한 기능을 제공합니다. 일본 서비스를 위해 다국어로 구조를 변경하는 등 지속적으로 기능을 추가하고 있습니다.
+      기존 헬로우봇앱 서비스의 웹 전용 서비스로, 채팅방 등 채팅 인터페이스와 스킬 소비를 위한 다양한 기능을 제공합니다. 일본 서비스를 위해 다국어로 구조를 변경하는 등 지속적으로 기능을 추가하고 개선하였습니다.
       <br>
-      Angular5-9, RxJS, TypeScript, Sass / Angular Universal(SSR), Serverless(AWS) / SEO, 다국어
+      Angular5-10, RxJS, TypeScript, Sass / Angular Universal(SSR), Serverless(AWS) / SEO, 다국어
     client: 띵스플로우
     url:
-      - https://hellobotskillstore.com
+      - https://hellobot.co
     tags: [mobile, tablet, desktop]
     featured: true
 
   - title: 헬로우봇 스튜디오 - 챗봇 제작 및 관리용 웹사이트
-    date: [2017-12, present]
+    date: [2017-12, 2020-12]
     description: >
       챗봇 생성하고 관리하며, 다양한 유형의 메세지를 작성하고 대화 흐름을 구성할 수 있는 UI를 구현하였습니다.
       <br>
-      Angular7-9, RxJS, TypeScript, Sass / PWA(Service Worker)
+      Angular7-10, RxJS, TypeScript, Sass / PWA(Service Worker)
     client: 띵스플로우
     url:
       - https://hellobotstudio.com
@@ -46,15 +50,15 @@ projects:
     featured: true
     
   - title: 띵스플로우 반응형 웹사이트, 헬로우봇 반응형 웹사이트
-    date: [2017-12, present]
+    date: [2017-12, 2020-12]
     description: >
       <b>띵스플로우 반응형 웹사이트</b> - 회사 소개 웹사이트로 ngx-translate 라이브러리를 기반으로 한국어, 일본어를 지원하는 다국어 웹사이트를 구현하였습니다.<br>
       <b>헬로우봇 반응형 웹사이트</b> - 헬로우봇 서비스 소개 웹사이트입니다.<br>
-      Angular, RxJS, TypeScript, Sass / PWA(Service Worker) / Angular Universal(Prerendering 적용) / SEO
+      Angular7-10, RxJS, TypeScript, Sass / PWA(Service Worker) / Angular Universal(Prerendering 적용) / SEO, 다국어
     client: 띵스플로우
     url:
       - https://thingsflow.com
-      - http://hellobot.co
+      - https://thingsflow.kr
     tags: [mobile, tablet, desktop]
     featured: true
     
@@ -300,14 +304,15 @@ projects:
 
 
 skills:
-  - 웹 표준, 브라우저 호환성, 반응형 웹, 웹 접근성, SEO
-  - Angular, TypeScript, RxJS
+  - 웹 표준, 브라우저 호환성, 반응형 웹, 웹 접근성, SEO, PWA
+  - SPA, Angular
+  - JavaScript(ES6), TypeScript, RxJS, jQuery
   - HTML5, Jekyll, Liquid, Nunjucks
   - CSS3, Sass
-  - JavaScript(ES6), jQuery
   - Bootstrap, Material
-  - npm, Gulp, Browsersync
-  - Git, Chrome DevTools, VirtualBox, WebStorm
+  - Git, npm, Gulp, Browsersync, Chrome DevTools, VirtualBox, WebStorm
+  - AWS(S3, Lambda), Firebase(Hosting, Functions), Travis CI
+  - Google Analytics, Google Tag Manager, Google Optimize, Amplitude, Airbridge, Facebook Pixel, Kakao Pixel
 
 tools:
   - Slack, Email
