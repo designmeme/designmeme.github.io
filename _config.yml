@@ -66,7 +66,7 @@ exclude:
   - README.md
   - node_modules
   - vendor
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 sass:
