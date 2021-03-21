@@ -25,6 +25,26 @@ education:
     description:
 
 projects:
+  - title: 엑심베이 반응형 전자결제 모듈
+    date: [ 2021-01, 2021-02 ]
+    description: >
+      엑심베이의 반응형 웹 전자결제 모듈입니다. 프론트엔드 중 웹 접근성을 갖춘 HTML 구조와 반응형 스타일, 사용자 인터렉션 위주의 자바스크립트를 담당했습니다 .<br>
+      모바일 우선 반응형 / 웹 접근성
+    client: 엑심베이
+    url:
+    tags: [ mobile, tablet, desktop ]
+    featured: true
+
+  - title: 엑심베이 반응형 웹사이트
+    date: [ 2020-03, 2020-05 ]
+    description: >
+      엑심베이의 전자결제 서비스를 소개하는 웹사이트의 프론트엔드를 개발했습니다.<br>
+      모바일 우선 반응형 / Sass 사용 / SEO
+    client: 엑심베이
+    url: https://eximbay.com
+    tags: [ mobile, tablet, desktop ]
+    featured: false
+
   - title: 헬로우봇 스킬스토어 - 챗봇 대화 웹서비스
     date: [2020-03, 2020-12]
     description: >
