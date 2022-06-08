@@ -12,6 +12,7 @@ image:            /assets/image/common/feature.png # og_image, fb 고해상도 1
 #google_site_verification: google2bfa19f4f3a8a8ee
 google_adsense:   ca-pub-3088246349891349
 google_analytics: UA-93339811-1
+gtag: G-FNDEZBX8ME
 statcounter:
   project:        11398249
   security:       3b7ccf52

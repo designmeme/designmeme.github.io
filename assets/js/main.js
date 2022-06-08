@@ -63,9 +63,14 @@ $(window).on('load resize orientationchange', liftFootnotes);
 $(window).on('load resize orientationchange scroll', stickySubNav);
 
 function gaEvent(category, action, label) {
-  if (!window.ga) {
-    return;
-  }
+	if (window.ga) {
+		ga('send', 'event', category, action, label);
+	}
 
-  ga('send', 'event', category, action, label);
+	if (window.gtag) {
+		gtag('event', action, {
+			'event_category': category,
+			'event_label': label,
+		})
+	}
 }
