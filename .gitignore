@@ -1,6 +1,7 @@
 # Jekyll GitHub Page
 _site
 _gh_pages
+_draft
 .sass-cache
 .jekyll-metadata
 
