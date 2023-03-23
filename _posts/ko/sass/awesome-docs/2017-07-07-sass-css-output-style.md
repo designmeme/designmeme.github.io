@@ -8,6 +8,7 @@ tags:     [sass, scss, css, preprocessor, output styles, comments, options, ì˜µì
 image:    
 date:             2017-07-07 10:23:00 +0900
 last_modified_at: 2017-07-24 22:23:00 +0900
+redirect_to: https://heyjihye.com/blog/sass-css-output-style/
 ---
 
 * Will be replaced with the ToC

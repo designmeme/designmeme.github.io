@@ -2,6 +2,6 @@
 title:      Home
 subtitle:   Hello!
 sitemap:    false
-name:       ko
+name:       home
 redirect_to: https://heyjihye.com/blog/
 ---

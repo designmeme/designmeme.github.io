@@ -6,6 +6,7 @@ permalink:  /ko/about/resume/
 excerpt:    다양한 형태의 웹사이트와 모바일 웹, 반응형 웹 그리고 웹 접근성 프로젝트까지 풍부한 개발 경험을 가지고 있습니다.
 date:             2017-07-07 13:00:00 +0900
 last_modified_at: 2020-01-31 00:00:00 +0900
+redirect_to: https://heyjihye.com/about/resume/
 ---
 
 {% assign resume = site.data.resume %}

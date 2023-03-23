@@ -7,7 +7,8 @@ excerpt:  Sass에서도 식별자 이름에 따른 규칙이 강제로 정해진
 tags:     [sass, scss, css, preprocessor, 전처리기, sass identifiers, 스네이크 표기법, underscore, 언더스코어, hyphen-separated case]
 image:    
 date:             2017-07-28 16:33:00 +0900
-last_modified_at: 
+last_modified_at:
+redirect_to: https://heyjihye.com/blog/sass-identifiers/
 ---
 
 * Will be replaced with the ToC

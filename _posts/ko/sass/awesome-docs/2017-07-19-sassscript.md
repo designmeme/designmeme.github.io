@@ -8,6 +8,7 @@ tags:     [sass, scss, css, preprocessor, 전처리기, 보간, 스크립트, sc
 image:    
 date:             2017-07-19 13:36:00 +0900
 last_modified_at: 2017-07-30 22:48:00 +0900
+redirect_to: https://heyjihye.com/blog/sass-sassscript/
 ---
 
 * Will be replaced with the ToC

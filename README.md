@@ -1,3 +1,7 @@
+## 📣 웹사이트 이전
+https://github.com/designmeme/personal-website
+Gatsby 를 사용해 재개발하였으며 도메인도 변경하였습니다. 기존 페이지는 모두 새 주소로 리다이렉트 됩니다.
+
 # Multilingual Jekyll Website 
 This is the source code of my personal website using Github Pages and [jekyll](http://jekyllrb.com).
 It is a multilingual website in Korean and English.

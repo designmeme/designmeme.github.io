@@ -8,6 +8,7 @@ tags:     [sass, scss, css, preprocessor, guide, study, 전처리기, 배우기,
 # image:    
 date:             2017-07-10 18:00:00 +0900
 last_modified_at: 2017-07-21 14:54:00 +0900
+redirect_to: https://heyjihye.com/blog/
 ---
 
 * Will be replaced with the ToC
