@@ -7,7 +7,8 @@ excerpt:
 tags:     [sass, scss, css, preprocessor, 전처리기, 데이터 유형]
 image:    
 date:             2017-07-31 00:00:00 +0900
-last_modified_at: 
+last_modified_at:
+redirect_to: https://heyjihye.com/blog/sass-data-types/
 ---
 
 * Will be replaced with the ToC

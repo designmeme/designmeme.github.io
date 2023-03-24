@@ -8,6 +8,7 @@ tags:     [sass, scss, css, preprocessor, syntax, difference, compare, convert, 
 image:    
 date:             2017-07-13 22:30:00 +0900
 last_modified_at: 2017-07-14 11:06:00 +0900
+redirect_to: https://heyjihye.com/blog/write-sass-with-scss/
 ---
 
 * Will be replaced with the ToC

@@ -8,6 +8,7 @@ tags:     [sass, scss, css, preprocessor, 전처리기, 스크립트, script, CL
 image:    
 date:             2017-07-19 17:56:00 +0900
 last_modified_at: 2017-07-24 22:23:00 +0900
+redirect_to: https://heyjihye.com/blog/sass-interactive-shell/
 ---
 
 * Will be replaced with the ToC
