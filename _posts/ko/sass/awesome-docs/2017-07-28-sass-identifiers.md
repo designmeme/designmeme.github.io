@@ -8,7 +8,7 @@ tags:     [sass, scss, css, preprocessor, 전처리기, sass identifiers, 스네
 image:    
 date:             2017-07-28 16:33:00 +0900
 last_modified_at:
-redirect_to: https://heyjihye.com/blog/sass-identifiers/
+redirect_to: https://heyjihye.netlify.app/blog/sass-identifiers/
 ---
 
 * Will be replaced with the ToC

@@ -8,7 +8,7 @@ tags:     [sass, scss, css, preprocessor, guide, study, 전처리기, 배우기,
 image:    
 date:             2017-07-13 17:03:00 +0900
 last_modified_at:
-redirect_to: https://heyjihye.com/blog/make-awesome-stylesheets-with-sass/
+redirect_to: https://heyjihye.netlify.app/blog/make-awesome-stylesheets-with-sass/
 ---
 
 * Will be replaced with the ToC

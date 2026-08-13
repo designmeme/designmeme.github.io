@@ -8,7 +8,7 @@ tags:     [sass, scss, css, preprocessor, selectors, nesting, 전처리기, 선�
 image:    
 date:             2017-07-14 17:07:00 +0900
 last_modified_at: 2017-07-24 22:23:00 +0900
-redirect_to: https://heyjihye.com/blog/sass-css-extensions/
+redirect_to: https://heyjihye.netlify.app/blog/sass-css-extensions/
 ---
 
 * Will be replaced with the ToC
